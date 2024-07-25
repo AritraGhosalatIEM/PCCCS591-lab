@@ -1,0 +1,98 @@
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 20
+Server version: 11.4.2-MariaDB Arch Linux
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [iem]> source code/1.sql
+Query OK, 0 rows affected (0.042 sec)
+
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| emp_no     | int(11)     | YES  |     | NULL    |       |
+| e_name     | varchar(32) | YES  |     | NULL    |       |
+| e_address  | varchar(32) | YES  |     | NULL    |       |
+| e_phone_no | int(11)     | YES  |     | NULL    |       |
+| dept_no    | int(11)     | YES  |     | NULL    |       |
+| dept_name  | varchar(2)  | YES  |     | NULL    |       |
+| job_id     | char(1)     | YES  |     | NULL    |       |
+| salary     | float       | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+8 rows in set (0.001 sec)
+
+Query OK, 0 rows affected (0.031 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| emp_no     | int(11)     | YES  |     | NULL    |       |
+| e_name     | varchar(32) | YES  |     | NULL    |       |
+| e_address  | varchar(32) | YES  |     | NULL    |       |
+| e_phone_no | int(11)     | YES  |     | NULL    |       |
+| dept_no    | int(11)     | YES  |     | NULL    |       |
+| dept_name  | varchar(2)  | YES  |     | NULL    |       |
+| job_id     | char(1)     | YES  |     | NULL    |       |
+| salary     | float       | YES  |     | NULL    |       |
+| hiredate   | date        | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+9 rows in set (0.004 sec)
+
+Query OK, 0 rows affected (0.066 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| emp_no     | int(11)     | YES  |     | NULL    |       |
+| e_name     | varchar(32) | YES  |     | NULL    |       |
+| e_address  | varchar(32) | YES  |     | NULL    |       |
+| e_phone_no | int(11)     | YES  |     | NULL    |       |
+| dept_no    | int(11)     | YES  |     | NULL    |       |
+| dept_name  | varchar(2)  | YES  |     | NULL    |       |
+| job_id     | varchar(2)  | YES  |     | NULL    |       |
+| salary     | float       | YES  |     | NULL    |       |
+| hiredate   | date        | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+9 rows in set (0.007 sec)
+
+Query OK, 0 rows affected (0.033 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| e_no       | int(11)     | YES  |     | NULL    |       |
+| e_name     | varchar(32) | YES  |     | NULL    |       |
+| e_address  | varchar(32) | YES  |     | NULL    |       |
+| e_phone_no | int(11)     | YES  |     | NULL    |       |
+| dept_no    | int(11)     | YES  |     | NULL    |       |
+| dept_name  | varchar(2)  | YES  |     | NULL    |       |
+| job_id     | varchar(2)  | YES  |     | NULL    |       |
+| salary     | float       | YES  |     | NULL    |       |
+| hiredate   | date        | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+9 rows in set (0.001 sec)
+
+Query OK, 0 rows affected (0.033 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| e_no       | int(11)     | YES  |     | NULL    |       |
+| e_name     | varchar(32) | YES  |     | NULL    |       |
+| e_address  | varchar(32) | YES  |     | NULL    |       |
+| e_phone_no | int(11)     | YES  |     | NULL    |       |
+| dept_no    | int(11)     | YES  |     | NULL    |       |
+| dept_name  | varchar(2)  | YES  |     | NULL    |       |
+| job_id     | varchar(10) | YES  |     | NULL    |       |
+| salary     | float       | YES  |     | NULL    |       |
+| hiredate   | date        | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+9 rows in set (0.001 sec)
+
+MariaDB [iem]> exit;

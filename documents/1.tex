@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{tcolorbox}
+\usepackage{underscore}
+\usepackage{verbatim}
+\usepackage{minted}
+\usemintedstyle{rainbow_dash}
+\pagestyle{empty}
+\begin{document}
+\section*{Experiment 1}
+\subsection*{\textbf{Title:} Implementation of DDL commands of SQl with suitable examples}
+\begin{itemize}
+	\item Create Table
+	\item Alter Table
+	\item Drop Table
+\end{itemize}
+\subsection*{\textbf{Objective:}}
+\begin{itemize}
+	\item To understand design and implementation of databases
+	\item To understand data definition language
+\end{itemize}
+\subsection*{Lab Assignment}
+\begin{itemize}
+	\item Create a table EMPLOYEE with following schema: (Emp_no, E_name, E_address, E_ph_no, Dept_no, Dept_name,Job_id , Salary)
+	\item Add new column HIREDATE to the existing relation
+	\item Change Job_id from char to varchar(2)
+	\item Change the name of field Emp_no to E_no
+	\item Modify the column width of the job field of emp table
+\end{itemize}
+\subsection*{Code}
+\inputminted{sql}{code/1.sql}
+\subsection*{Output}
+\verbatiminput{output/1.txt}
+\end{document}
