@@ -1,0 +1,1811 @@
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 16
+Server version: 11.4.2-MariaDB Arch Linux
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [iem]> source code/3.sql;
+Query OK, 0 rows affected, 1 warning (0.000 sec)
+
++--------+---------------------+---------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+| emp_no | e_name              | e_address                             | e_phone_no | dept_no | dept_name | job_id  | designation | salary | hiredate   |
++--------+---------------------+---------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+|     24 | Aarush Bhargava     | H.No. 90
+Garg, Munger 488150          | 7886271353 |       9 | csbs      | 6018261 | manager     |   8539 | 1992-12-12 |
+|     29 | Kavya Swaminathan   | 97/58
+Cheema
+Ambarnath 046918         | 8544572080 |      23 | csbs      | 4319399 | manager     |    244 | 2012-11-07 |
+|     34 | Pihu Sule           | 387, Chandra
+Karaikudi 639219         | 6989278861 |      10 | csbs      | 6475035 | manager     |   4275 | 2027-08-01 |
+|     35 | Biju Vasa           | 04/19
+Apte Circle, Aurangabad-504786  | 7000798044 |       4 | csbs      | 8766721 | manager     |   7967 | 2025-10-05 |
+|     40 | Anay Sharma         | 00/957
+Yadav Circle
+Sonipat 396722    | 7881050758 |      19 | csbs      | 9099392 | manager     |   1043 | 2002-02-03 |
+|     43 | Sumer Bera          | H.No. 45, Raval Circle
+Ballia-443749  | 6675536480 |      20 | csbs      | 4324216 | manager     |   2830 | 2005-08-27 |
+|     45 | Arhaan Ratti        | 459, Tara Road, Allahabad 646630      | 3003224583 |      11 | csbs      | 2300841 | manager     |   5753 | 1999-04-13 |
+|     47 | Khushi Rajagopalan  | H.No. 847
+Deol Zila, Dibrugarh-872922 | 2399190271 |       9 | csbs      | 4214844 | manager     |   1940 | 1974-09-01 |
+|     50 | Advik Kalla         | H.No. 462
+Kale Marg
+Bhopal-654347     | 8452801783 |      14 | csbs      | 2803997 | manager     |   5650 | 1996-04-29 |
+|     55 | Mahika Bose         | 412, Sandal Chowk
+Kota-747762         | 3628939059 |       5 | csbs      | 5838881 | manager     |   8018 | 1975-03-06 |
+|     56 | Darshit Dash        | H.No. 42
+Ramesh Circle
+Belgaum 076436 | 7404186141 |      20 | csbs      | 1402340 | manager     |   1407 | 2004-08-31 |
+|     61 | Mohanlal Chhabra    | 221
+Babu Zila, Gorakhpur-288653       | 1691487460 |      16 | csbs      | 2279199 | manager     |   7775 | 2032-08-19 |
+|     69 | Elakshi Chakrabarti | 18/850, Brahmbhatt Ganj
+Imphal-902807 | 4163489435 |      18 | csbs      | 7212661 | manager     |   2447 | 1974-12-08 |
+|     77 | Zain Srinivasan     | 46/661, Dada Path
+Thanjavur-690072    | 8049691823 |       4 | csbs      | 1418918 | manager     |   9920 | 1989-07-24 |
+|     94 | Shamik Saraf        | 39/91, Kibe Street, Belgaum-684445    | 4152444352 |      26 | csbs      | 2808295 | manager     |   9806 | 2015-03-03 |
+|     98 | Miraya Handa        | 11/383, Bava Road
+Erode-499430        | 6796353867 |      30 | csbs      | 4163880 | manager     |   4901 | 2003-11-26 |
++--------+---------------------+---------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+16 rows in set (0.001 sec)
+
++--------+------------------+------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+| emp_no | e_name           | e_address                          | e_phone_no | dept_no | dept_name | job_id  | designation | salary | hiredate   |
++--------+------------------+------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+|     67 | Stuvan Chaudhary | 736, Bahl Road, Jodhpur-822953     | 4208800902 |      10 | csbs      | 9180836 | mgr         |   9790 | 2029-12-11 |
+|     77 | Zain Srinivasan  | 46/661, Dada Path
+Thanjavur-690072 | 8049691823 |       4 | csbs      | 1418918 | manager     |   9920 | 1989-07-24 |
+|     94 | Shamik Saraf     | 39/91, Kibe Street, Belgaum-684445 | 4152444352 |      26 | csbs      | 2808295 | manager     |   9806 | 2015-03-03 |
++--------+------------------+------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+3 rows in set (0.001 sec)
+
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+| emp_no | e_name              | e_address                                        | e_phone_no | dept_no | dept_name | job_id  | designation  | salary | hiredate   |
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+|      2 | Uthkarsh Bajwa      | 301
+Chauhan Chowk, Buxar 078715                  | 2178336902 |      14 | csbs      | 2559870 | clerk        |    999 | 1991-10-31 |
+|      3 | Ranbir Walia        | H.No. 46
+Goswami Ganj
+Tumkur-674366              | 8043286987 |       8 | csbs      | 7555122 | analyst      |   5526 | 2024-11-19 |
+|      4 | Miraan Chatterjee   | 031, Shenoy Nagar, Haldia-873862                 | 1530508794 |      26 | csbs      | 6855207 | analyst      |   3318 | 1996-06-16 |
+|      5 | Aradhya Kunda       | 15/28, Deshpande Ganj
+Jamnagar 273132            | 2442989356 |       2 | csbs      | 3632302 | analyst      |   2937 | 2019-09-16 |
+|      6 | Krish Dubey         | 823, Kalita Ganj, Ghaziabad 691660               | 8104920856 |       6 | csbs      | 3379415 | president    |   2438 | 2023-01-03 |
+|      7 | Urvi Garg           | 520, Rajagopalan Ganj
+Saharanpur 905111          | 9317251913 |      18 | csbs      | 6271176 | clerk        |   1714 | 2017-03-12 |
+|      8 | Ira Balakrishnan    | H.No. 766
+Sharma Marg, Ramgarh-061306            | 7860319225 |       1 | csbs      | 1984910 | it professor |   2307 | 2031-01-23 |
+|     10 | Gatik Sant          | 27/347
+Buch Road
+Malegaon-481030                 | 6033941038 |      23 | csbs      | 6918132 | president    |   2896 | 2028-07-24 |
+|     11 | Nakul Johal         | 33
+Saraf Street, Baranagar-691562                | 5924544280 |      18 | csbs      | 8364043 | mgr          |   4668 | 1994-06-19 |
+|     12 | Jayan Bahl          | 26/63
+Vaidya Road
+Jodhpur-597207                 | 9122338631 |      17 | csbs      | 6614679 | analyst      |   4101 | 1998-01-24 |
+|     13 | Amira Dyal          | H.No. 95
+Loke Nagar, Bidar-581206                | 7330549584 |      19 | csbs      | 5629468 | it professor |   1125 | 2016-05-29 |
+|     14 | Lakshit Khanna      | 870
+Comar Path
+Kadapa 204034                     | 2483282115 |       5 | csbs      | 8745307 | it professor |   1169 | 1991-10-25 |
+|     15 | Anay Korpal         | H.No. 53
+Kota Zila
+Aurangabad-000764             | 9907156401 |       3 | csbs      | 1308736 | mgr          |   5291 | 1995-08-16 |
+|     18 | Shayak Mahal        | 90, Gaba
+Eluru-483402                            | 4978098115 |      19 | csbs      | 3011136 | president    |   4235 | 1992-10-19 |
+|     19 | Zoya Sekhon         | 32/839, Som Zila, Kochi 936652                   | 7322883191 |      15 | csbs      | 3240998 | mgr          |   7888 | 2015-04-23 |
+|     21 | Amira Viswanathan   | H.No. 699, Badal
+Phagwara-520144                 | 7993860047 |       9 | csbs      | 9583819 | analyst      |   1009 | 1995-07-09 |
+|     22 | Veer Balakrishnan   | 20/266, Taneja Ganj, Moradabad 740651            | 9500869701 |       6 | csbs      | 3694437 | analyst      |   3012 | 2025-04-16 |
+|     23 | Dhanush Goda        | H.No. 014
+Gade Street
+Anand 001347               | 3866469843 |       6 | csbs      | 4054802 | it professor |   3643 | 2031-03-21 |
+|     24 | Aarush Bhargava     | H.No. 90
+Garg, Munger 488150                     | 7886271353 |       9 | csbs      | 6018261 | manager      |   8539 | 1992-12-12 |
+|     27 | Vihaan Gour         | 81
+Desai Nagar
+Nandyal 014155                    | 7605526092 |      16 | csbs      | 5627962 | president    |   6518 | 2030-06-11 |
+|     28 | Neelofar Iyer       | H.No. 232
+Thaker Nagar
+Bidhannagar-050087        | 6327063125 |      15 | csbs      | 9573588 | it professor |   7720 | 2011-01-14 |
+|     29 | Kavya Swaminathan   | 97/58
+Cheema
+Ambarnath 046918                    | 8544572080 |      23 | csbs      | 4319399 | manager      |    244 | 2012-11-07 |
+|     30 | Kabir Tata          | 65/99
+Dora Ganj
+Karawal Nagar-566105             | 3287225267 |       5 | csbs      | 5459520 | mgr          |   3203 | 2009-01-05 |
+|     32 | Shray Badal         | H.No. 69, Chopra Marg, Morbi-794764              | 1229059741 |      11 | csbs      | 4870957 | it professor |   7083 | 2021-08-07 |
+|     34 | Pihu Sule           | 387, Chandra
+Karaikudi 639219                    | 6989278861 |      10 | csbs      | 6475035 | manager      |   4275 | 2027-08-01 |
+|     35 | Biju Vasa           | 04/19
+Apte Circle, Aurangabad-504786             | 7000798044 |       4 | csbs      | 8766721 | manager      |   7967 | 2025-10-05 |
+|     36 | Yakshit Rastogi     | 88, Sethi, Sri Ganganagar 323340                 | 3691091324 |      25 | csbs      | 7035871 | clerk        |   7265 | 2014-12-02 |
+|     37 | Anahita Rau         | 23/198, Bhakta Street
+Kalyan-Dombivli 421981     | 2925591645 |      30 | csbs      | 7509930 | president    |   8014 | 1995-06-23 |
+|     38 | Saira Bajwa         | 462
+Arora Path, Hosur-114429                     | 1147638554 |      21 | csbs      | 1252608 | clerk        |    661 | 1986-01-20 |
+|     39 | Mishti Dave         | 30/57
+Rama Road, Eluru-064572                    | 6296438816 |       2 | csbs      | 2110571 | analyst      |   1629 | 2030-07-23 |
+|     40 | Anay Sharma         | 00/957
+Yadav Circle
+Sonipat 396722               | 7881050758 |      19 | csbs      | 9099392 | manager      |   1043 | 2002-02-03 |
+|     42 | Reyansh Jha         | 617, Konda Zila, Malda-862346                    | 2376783260 |      20 | csbs      | 9730999 | clerk        |   2225 | 2026-03-17 |
+|     43 | Sumer Bera          | H.No. 45, Raval Circle
+Ballia-443749             | 6675536480 |      20 | csbs      | 4324216 | manager      |   2830 | 2005-08-27 |
+|     44 | Kashvi Kapoor       | H.No. 25, Kapur Path, Guna 756000                | 4622767577 |       5 | csbs      | 8518419 | clerk        |   9535 | 1983-08-18 |
+|     45 | Arhaan Ratti        | 459, Tara Road, Allahabad 646630                 | 3003224583 |      11 | csbs      | 2300841 | manager      |   5753 | 1999-04-13 |
+|     48 | Eshani Kar          | 87/17, Raj Chowk, Visakhapatnam-404779           | 8544586123 |       7 | csbs      | 6552946 | mgr          |   2231 | 1997-06-09 |
+|     49 | Lavanya Ganesan     | 06/83
+Ghose Zila, Berhampur 884595               | 1963715667 |      11 | csbs      | 2834082 | analyst      |   6873 | 1993-10-15 |
+|     50 | Advik Kalla         | H.No. 462
+Kale Marg
+Bhopal-654347                | 8452801783 |      14 | csbs      | 2803997 | manager      |   5650 | 1996-04-29 |
+|     52 | Jhanvi Golla        | H.No. 056
+Chakrabarti Street, Tirunelveli 107607 | 1613738399 |      10 | csbs      | 3480031 | mgr          |   9507 | 2007-11-04 |
+|     53 | Mehul Gala          | H.No. 473, Lad Chowk
+Tiruppur-662052             | 3293328686 |       7 | csbs      | 6365742 | analyst      |   2646 | 2023-04-06 |
+|     54 | Hiran Vohra         | 89/758
+Master, Karaikudi 678013                  | 8787525125 |      18 | csbs      | 4375604 | it professor |   6165 | 2015-02-23 |
+|     56 | Darshit Dash        | H.No. 42
+Ramesh Circle
+Belgaum 076436            | 7404186141 |      20 | csbs      | 1402340 | manager      |   1407 | 2004-08-31 |
+|     57 | Heer Krishnan       | 10/332, Garg Marg, Aurangabad 849955             | 5278142094 |      22 | csbs      | 1721538 | mgr          |   5967 | 1991-03-06 |
+|     58 | Aaryahi Chaudhari   | 31/773
+Kulkarni Path
+Haridwar 350253             | 5853149146 |      21 | csbs      | 7391267 | president    |   3847 | 1990-07-09 |
+|     59 | Nakul Chaudhari     | 454, Garg Circle
+Gudivada 376764                 | 8566990354 |      23 | csbs      | 4292826 | president    |   1174 | 2020-04-09 |
+|     60 | Aaina Bose          | H.No. 144, Gola, Chinsurah 774757                | 1742890922 |       0 | csbs      | 4445898 | clerk        |   4525 | 2016-10-25 |
+|     61 | Mohanlal Chhabra    | 221
+Babu Zila, Gorakhpur-288653                  | 1691487460 |      16 | csbs      | 2279199 | manager      |   7775 | 2032-08-19 |
+|     62 | Devansh Kamdar      | H.No. 507, Iyer Nagar
+Rourkela-873730            | 4978310750 |      14 | csbs      | 2781355 | president    |   3010 | 2008-05-07 |
+|     63 | Shamik Mane         | 91/335
+Ray Chowk, Noida 315638                   | 6203375531 |       5 | csbs      | 4150982 | clerk        |   4554 | 2030-08-01 |
+|     64 | Aradhya Iyengar     | 399
+Lanka Street
+Tenali-196768                   | 3379561760 |      13 | csbs      | 4727226 | it professor |   2593 | 2000-12-23 |
+|     65 | Jayan Ratti         | 31/44
+Seshadri Nagar
+Bhopal-701746               | 9861012048 |      30 | csbs      | 9635582 | analyst      |   1385 | 2026-07-01 |
+|     66 | Fateh Thakkar       | 71, Varkey Circle
+Aligarh 707050                 | 2581464737 |      20 | csbs      | 3615125 | mgr          |   4708 | 1987-08-05 |
+|     67 | Stuvan Chaudhary    | 736, Bahl Road, Jodhpur-822953                   | 4208800902 |      10 | csbs      | 9180836 | mgr          |   9790 | 2029-12-11 |
+|     68 | Diya Bajwa          | 68
+Khare Road, Yamunanagar-301158                | 4520269444 |      19 | csbs      | 6959540 | president    |    155 | 1993-01-05 |
+|     70 | Purab Venkatesh     | H.No. 60, Khurana, Unnao 836823                  | 7256403957 |      10 | csbs      | 8237480 | mgr          |   4617 | 2018-02-11 |
+|     71 | Reyansh Dada        | H.No. 558
+Majumdar
+Shahjahanpur-374295           | 4510034191 |       9 | csbs      | 6290693 | president    |   4457 | 2007-05-05 |
+|     72 | Aayush Swamy        | 36/896, Date Street, Vasai-Virar-650849          | 2721634761 |       8 | csbs      | 3671933 | analyst      |   2824 | 2025-09-07 |
+|     73 | Rati Bir            | 92
+Chandra Zila
+Malda-428295                     | 7779026763 |      18 | csbs      | 1441822 | it professor |   7519 | 2004-11-20 |
+|     74 | Gokul Bhat          | H.No. 75, Kumer Circle
+Raipur-221883             | 6015575900 |      11 | csbs      | 3615717 | president    |   3066 | 2023-07-22 |
+|     75 | Anahita Suri        | H.No. 24
+Chad Street
+Mahbubnagar-663383          | 9987951629 |       3 | csbs      | 6601868 | clerk        |   5277 | 1992-07-17 |
+|     77 | Zain Srinivasan     | 46/661, Dada Path
+Thanjavur-690072               | 8049691823 |       4 | csbs      | 1418918 | manager      |   9920 | 1989-07-24 |
+|     78 | Vanya Gade          | 811, Sami Marg, Durgapur-107016                  | 1672705916 |      15 | csbs      | 6630308 | clerk        |   1093 | 2022-11-16 |
+|     80 | Kaira Sarraf        | 82/150, Kala Marg
+Bahraich 541163                | 2847523000 |      25 | csbs      | 3176297 | mgr          |    356 | 2013-06-18 |
+|     81 | Heer Borra          | H.No. 557, Magar Zila, Arrah 967763              | 5929267306 |      14 | csbs      | 1812267 | it professor |   2845 | 1981-05-05 |
+|     82 | Azad Chopra         | H.No. 28, Sharma
+Jabalpur-846397                 | 9435261046 |       4 | csbs      | 8394079 | analyst      |   8159 | 2027-07-05 |
+|     83 | Fateh Shroff        | 556
+Shroff Circle
+Ujjain 724521                  | 7910538298 |       5 | csbs      | 6953251 | analyst      |   8780 | 2003-11-26 |
+|     85 | Shray Bera          | H.No. 856
+Shere Street
+Dewas 308216              | 7523482204 |      23 | csbs      | 5004838 | analyst      |   6998 | 1994-01-25 |
+|     86 | Damini Dubey        | H.No. 11, Kashyap Ganj, Sambhal-617079           | 8400250595 |      30 | csbs      | 4204452 | clerk        |   9376 | 2024-11-29 |
+|     87 | Ira Mandal          | H.No. 03, Rajagopalan Circle, Gandhinagar 954072 | 5615382593 |      14 | csbs      | 8236790 | analyst      |   8360 | 1997-07-14 |
+|     88 | Hazel Gade          | 07, Gupta Chowk
+Jhansi 454973                    | 7735220089 |       4 | csbs      | 3476686 | analyst      |   1115 | 2029-10-17 |
+|     89 | Myra Sankaran       | 88/376
+Barad Street
+Ajmer-023474                 | 3290848861 |      12 | csbs      | 5454645 | clerk        |   5696 | 1990-02-28 |
+|     91 | Kismat Warrior      | 18/230, Kapoor Road, Visakhapatnam-639083        | 2997089052 |      19 | csbs      | 7579467 | president    |   4917 | 2018-11-15 |
+|     93 | Nayantara Deshpande | 62/189, Gupta Zila
+Jamnagar-884728               | 1242810178 |       7 | csbs      | 2256081 | president    |   6750 | 2022-12-03 |
+|     94 | Shamik Saraf        | 39/91, Kibe Street, Belgaum-684445               | 4152444352 |      26 | csbs      | 2808295 | manager      |   9806 | 2015-03-03 |
+|     95 | Yuvraj  Kamdar      | 97/639
+Sankar Path, Nangloi Jat 170216           | 7093624465 |       0 | csbs      | 4841150 | mgr          |   3719 | 2009-03-29 |
+|     96 | Tushar Raval        | H.No. 932
+Kapadia Chowk, Dibrugarh 966089        | 7608375120 |      29 | csbs      | 4046532 | it professor |   9684 | 2026-08-18 |
+|     98 | Miraya Handa        | 11/383, Bava Road
+Erode-499430                   | 6796353867 |      30 | csbs      | 4163880 | manager      |   4901 | 2003-11-26 |
+|     99 | Ahana  Bawa         | H.No. 23, Gole Ganj, Hyderabad 022843            | 8007677764 |      20 | csbs      | 2193235 | analyst      |   5959 | 2018-06-15 |
+|    100 | Saira Saraf         | 134
+Goyal Road, Nizamabad-068697                 | 1746737413 |      19 | csbs      | 2434484 | mgr          |   3873 | 2017-02-06 |
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+79 rows in set (0.001 sec)
+
++--------+-------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+| emp_no | e_name            | e_address                                        | e_phone_no | dept_no | dept_name | job_id  | designation | salary | hiredate   |
++--------+-------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+|      2 | Uthkarsh Bajwa    | 301
+Chauhan Chowk, Buxar 078715                  | 2178336902 |      14 | csbs      | 2559870 | clerk       |    999 | 1991-10-31 |
+|      3 | Ranbir Walia      | H.No. 46
+Goswami Ganj
+Tumkur-674366              | 8043286987 |       8 | csbs      | 7555122 | analyst     |   5526 | 2024-11-19 |
+|      4 | Miraan Chatterjee | 031, Shenoy Nagar, Haldia-873862                 | 1530508794 |      26 | csbs      | 6855207 | analyst     |   3318 | 1996-06-16 |
+|      5 | Aradhya Kunda     | 15/28, Deshpande Ganj
+Jamnagar 273132            | 2442989356 |       2 | csbs      | 3632302 | analyst     |   2937 | 2019-09-16 |
+|      7 | Urvi Garg         | 520, Rajagopalan Ganj
+Saharanpur 905111          | 9317251913 |      18 | csbs      | 6271176 | clerk       |   1714 | 2017-03-12 |
+|     12 | Jayan Bahl        | 26/63
+Vaidya Road
+Jodhpur-597207                 | 9122338631 |      17 | csbs      | 6614679 | analyst     |   4101 | 1998-01-24 |
+|     16 | Sana Bobal        | 96/276
+Dora Zila, Gangtok 261606                 | 3911844914 |       3 | csbs      | 5663903 | clerk       |   4759 | 1972-08-03 |
+|     20 | Yasmin Kothari    | 55/11, Rajagopalan
+Rajahmundry-415643            | 7812180617 |      24 | csbs      | 6632373 | analyst     |   6630 | 1971-01-15 |
+|     21 | Amira Viswanathan | H.No. 699, Badal
+Phagwara-520144                 | 7993860047 |       9 | csbs      | 9583819 | analyst     |   1009 | 1995-07-09 |
+|     22 | Veer Balakrishnan | 20/266, Taneja Ganj, Moradabad 740651            | 9500869701 |       6 | csbs      | 3694437 | analyst     |   3012 | 2025-04-16 |
+|     25 | Tiya Gour         | 192, Chhabra Path, Gaya 305638                   | 7224478579 |       0 | csbs      | 5683970 | clerk       |   7764 | 1973-12-20 |
+|     26 | Ishita Wadhwa     | H.No. 68, Chawla Chowk
+Yamunanagar 429284        | 7530873785 |       0 | csbs      | 2717233 | clerk       |   1159 | 1971-09-24 |
+|     33 | Ranbir Dalal      | 30/064, Krishna Street, Mirzapur-353912          | 6818724194 |       1 | csbs      | 3328789 | clerk       |   4665 | 1980-09-29 |
+|     36 | Yakshit Rastogi   | 88, Sethi, Sri Ganganagar 323340                 | 3691091324 |      25 | csbs      | 7035871 | clerk       |   7265 | 2014-12-02 |
+|     38 | Saira Bajwa       | 462
+Arora Path, Hosur-114429                     | 1147638554 |      21 | csbs      | 1252608 | clerk       |    661 | 1986-01-20 |
+|     39 | Mishti Dave       | 30/57
+Rama Road, Eluru-064572                    | 6296438816 |       2 | csbs      | 2110571 | analyst     |   1629 | 2030-07-23 |
+|     42 | Reyansh Jha       | 617, Konda Zila, Malda-862346                    | 2376783260 |      20 | csbs      | 9730999 | clerk       |   2225 | 2026-03-17 |
+|     44 | Kashvi Kapoor     | H.No. 25, Kapur Path, Guna 756000                | 4622767577 |       5 | csbs      | 8518419 | clerk       |   9535 | 1983-08-18 |
+|     49 | Lavanya Ganesan   | 06/83
+Ghose Zila, Berhampur 884595               | 1963715667 |      11 | csbs      | 2834082 | analyst     |   6873 | 1993-10-15 |
+|     53 | Mehul Gala        | H.No. 473, Lad Chowk
+Tiruppur-662052             | 3293328686 |       7 | csbs      | 6365742 | analyst     |   2646 | 2023-04-06 |
+|     60 | Aaina Bose        | H.No. 144, Gola, Chinsurah 774757                | 1742890922 |       0 | csbs      | 4445898 | clerk       |   4525 | 2016-10-25 |
+|     63 | Shamik Mane       | 91/335
+Ray Chowk, Noida 315638                   | 6203375531 |       5 | csbs      | 4150982 | clerk       |   4554 | 2030-08-01 |
+|     65 | Jayan Ratti       | 31/44
+Seshadri Nagar
+Bhopal-701746               | 9861012048 |      30 | csbs      | 9635582 | analyst     |   1385 | 2026-07-01 |
+|     72 | Aayush Swamy      | 36/896, Date Street, Vasai-Virar-650849          | 2721634761 |       8 | csbs      | 3671933 | analyst     |   2824 | 2025-09-07 |
+|     75 | Anahita Suri      | H.No. 24
+Chad Street
+Mahbubnagar-663383          | 9987951629 |       3 | csbs      | 6601868 | clerk       |   5277 | 1992-07-17 |
+|     76 | Shanaya Dass      | 10/22, Kaur Road, Panihati-526309                | 2013394588 |      21 | csbs      | 9769974 | analyst     |   3593 | 1980-10-11 |
+|     78 | Vanya Gade        | 811, Sami Marg, Durgapur-107016                  | 1672705916 |      15 | csbs      | 6630308 | clerk       |   1093 | 2022-11-16 |
+|     82 | Azad Chopra       | H.No. 28, Sharma
+Jabalpur-846397                 | 9435261046 |       4 | csbs      | 8394079 | analyst     |   8159 | 2027-07-05 |
+|     83 | Fateh Shroff      | 556
+Shroff Circle
+Ujjain 724521                  | 7910538298 |       5 | csbs      | 6953251 | analyst     |   8780 | 2003-11-26 |
+|     85 | Shray Bera        | H.No. 856
+Shere Street
+Dewas 308216              | 7523482204 |      23 | csbs      | 5004838 | analyst     |   6998 | 1994-01-25 |
+|     86 | Damini Dubey      | H.No. 11, Kashyap Ganj, Sambhal-617079           | 8400250595 |      30 | csbs      | 4204452 | clerk       |   9376 | 2024-11-29 |
+|     87 | Ira Mandal        | H.No. 03, Rajagopalan Circle, Gandhinagar 954072 | 5615382593 |      14 | csbs      | 8236790 | analyst     |   8360 | 1997-07-14 |
+|     88 | Hazel Gade        | 07, Gupta Chowk
+Jhansi 454973                    | 7735220089 |       4 | csbs      | 3476686 | analyst     |   1115 | 2029-10-17 |
+|     89 | Myra Sankaran     | 88/376
+Barad Street
+Ajmer-023474                 | 3290848861 |      12 | csbs      | 5454645 | clerk       |   5696 | 1990-02-28 |
+|     90 | Indrans Gill      | H.No. 19
+Agate Zila, Sri Ganganagar 467465       | 1616774578 |      19 | csbs      | 6234961 | clerk       |   9332 | 1980-08-01 |
+|     99 | Ahana  Bawa       | H.No. 23, Gole Ganj, Hyderabad 022843            | 8007677764 |      20 | csbs      | 2193235 | analyst     |   5959 | 2018-06-15 |
++--------+-------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+36 rows in set (0.002 sec)
+
+Empty set (0.001 sec)
+
++--------+------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+| emp_no | e_name           | e_address                                        | e_phone_no | dept_no | dept_name | job_id  | designation | salary | hiredate   |
++--------+------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+|     34 | Pihu Sule        | 387, Chandra
+Karaikudi 639219                    | 6989278861 |      10 | csbs      | 6475035 | manager     |   4275 | 2027-08-01 |
+|     42 | Reyansh Jha      | 617, Konda Zila, Malda-862346                    | 2376783260 |      20 | csbs      | 9730999 | clerk       |   2225 | 2026-03-17 |
+|     43 | Sumer Bera       | H.No. 45, Raval Circle
+Ballia-443749             | 6675536480 |      20 | csbs      | 4324216 | manager     |   2830 | 2005-08-27 |
+|     52 | Jhanvi Golla     | H.No. 056
+Chakrabarti Street, Tirunelveli 107607 | 1613738399 |      10 | csbs      | 3480031 | mgr         |   9507 | 2007-11-04 |
+|     56 | Darshit Dash     | H.No. 42
+Ramesh Circle
+Belgaum 076436            | 7404186141 |      20 | csbs      | 1402340 | manager     |   1407 | 2004-08-31 |
+|     66 | Fateh Thakkar    | 71, Varkey Circle
+Aligarh 707050                 | 2581464737 |      20 | csbs      | 3615125 | mgr         |   4708 | 1987-08-05 |
+|     67 | Stuvan Chaudhary | 736, Bahl Road, Jodhpur-822953                   | 4208800902 |      10 | csbs      | 9180836 | mgr         |   9790 | 2029-12-11 |
+|     70 | Purab Venkatesh  | H.No. 60, Khurana, Unnao 836823                  | 7256403957 |      10 | csbs      | 8237480 | mgr         |   4617 | 2018-02-11 |
+|     84 | Advika Chopra    | H.No. 061
+Garg, Udupi 005644                     | 1637473345 |      20 | csbs      | 6644682 | president   |   4912 | 1979-01-22 |
+|     99 | Ahana  Bawa      | H.No. 23, Gole Ganj, Hyderabad 022843            | 8007677764 |      20 | csbs      | 2193235 | analyst     |   5959 | 2018-06-15 |
++--------+------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+10 rows in set (0.001 sec)
+
++--------+------------------+------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+| emp_no | e_name           | e_address                                | e_phone_no | dept_no | dept_name | job_id  | designation  | salary | hiredate   |
++--------+------------------+------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+|      9 | Suhana Varkey    | 54/434, Sur Zila
+Eluru 998917            | 4042645117 |      18 | csbs      | 6926617 | mgr          |   8375 | 1973-10-02 |
+|     16 | Sana Bobal       | 96/276
+Dora Zila, Gangtok 261606         | 3911844914 |       3 | csbs      | 5663903 | clerk        |   4759 | 1972-08-03 |
+|     18 | Shayak Mahal     | 90, Gaba
+Eluru-483402                    | 4978098115 |      19 | csbs      | 3011136 | president    |   4235 | 1992-10-19 |
+|     32 | Shray Badal      | H.No. 69, Chopra Marg, Morbi-794764      | 1229059741 |      11 | csbs      | 4870957 | it professor |   7083 | 2021-08-07 |
+|     38 | Saira Bajwa      | 462
+Arora Path, Hosur-114429             | 1147638554 |      21 | csbs      | 1252608 | clerk        |    661 | 1986-01-20 |
+|     43 | Sumer Bera       | H.No. 45, Raval Circle
+Ballia-443749     | 6675536480 |      20 | csbs      | 4324216 | manager      |   2830 | 2005-08-27 |
+|     63 | Shamik Mane      | 91/335
+Ray Chowk, Noida 315638           | 6203375531 |       5 | csbs      | 4150982 | clerk        |   4554 | 2030-08-01 |
+|     67 | Stuvan Chaudhary | 736, Bahl Road, Jodhpur-822953           | 4208800902 |      10 | csbs      | 9180836 | mgr          |   9790 | 2029-12-11 |
+|     76 | Shanaya Dass     | 10/22, Kaur Road, Panihati-526309        | 2013394588 |      21 | csbs      | 9769974 | analyst      |   3593 | 1980-10-11 |
+|     85 | Shray Bera       | H.No. 856
+Shere Street
+Dewas 308216      | 7523482204 |      23 | csbs      | 5004838 | analyst      |   6998 | 1994-01-25 |
+|     92 | Stuvan Ray       | H.No. 725, Shere Zila
+Yamunanagar 972842 | 6034500905 |      14 | csbs      | 7738889 | mgr          |   3766 | 1974-11-09 |
+|     94 | Shamik Saraf     | 39/91, Kibe Street, Belgaum-684445       | 4152444352 |      26 | csbs      | 2808295 | manager      |   9806 | 2015-03-03 |
+|    100 | Saira Saraf      | 134
+Goyal Road, Nizamabad-068697         | 1746737413 |      19 | csbs      | 2434484 | mgr          |   3873 | 2017-02-06 |
++--------+------------------+------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+13 rows in set (0.004 sec)
+
++--------+---------------+--------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+| emp_no | e_name        | e_address                            | e_phone_no | dept_no | dept_name | job_id  | designation  | salary | hiredate   |
++--------+---------------+--------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+|     54 | Hiran Vohra   | 89/758
+Master, Karaikudi 678013      | 8787525125 |      18 | csbs      | 4375604 | it professor |   6165 | 2015-02-23 |
+|     57 | Heer Krishnan | 10/332, Garg Marg, Aurangabad 849955 | 5278142094 |      22 | csbs      | 1721538 | mgr          |   5967 | 1991-03-06 |
+|     81 | Heer Borra    | H.No. 557, Magar Zila, Arrah 967763  | 5929267306 |      14 | csbs      | 1812267 | it professor |   2845 | 1981-05-05 |
+|     88 | Hazel Gade    | 07, Gupta Chowk
+Jhansi 454973        | 7735220089 |       4 | csbs      | 3476686 | analyst      |   1115 | 2029-10-17 |
++--------+---------------+--------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+4 rows in set (0.001 sec)
+
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+| emp_no | e_name              | e_address                                        | e_phone_no | dept_no | dept_name | job_id  | designation  | salary | hiredate   |
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+|     68 | Diya Bajwa          | 68
+Khare Road, Yamunanagar-301158                | 4520269444 |      19 | csbs      | 6959540 | president    |    155 | 1993-01-05 |
+|     29 | Kavya Swaminathan   | 97/58
+Cheema
+Ambarnath 046918                    | 8544572080 |      23 | csbs      | 4319399 | manager      |    244 | 2012-11-07 |
+|     80 | Kaira Sarraf        | 82/150, Kala Marg
+Bahraich 541163                | 2847523000 |      25 | csbs      | 3176297 | mgr          |    356 | 2013-06-18 |
+|     38 | Saira Bajwa         | 462
+Arora Path, Hosur-114429                     | 1147638554 |      21 | csbs      | 1252608 | clerk        |    661 | 1986-01-20 |
+|      1 | Yashvi Dhingra      | H.No. 65
+Hari Road
+Maheshtala 907219             | 9220175501 |      17 | csbs      | 7497674 | it professor |    901 | 1971-06-28 |
+|      2 | Uthkarsh Bajwa      | 301
+Chauhan Chowk, Buxar 078715                  | 2178336902 |      14 | csbs      | 2559870 | clerk        |    999 | 1991-10-31 |
+|     21 | Amira Viswanathan   | H.No. 699, Badal
+Phagwara-520144                 | 7993860047 |       9 | csbs      | 9583819 | analyst      |   1009 | 1995-07-09 |
+|     40 | Anay Sharma         | 00/957
+Yadav Circle
+Sonipat 396722               | 7881050758 |      19 | csbs      | 9099392 | manager      |   1043 | 2002-02-03 |
+|     78 | Vanya Gade          | 811, Sami Marg, Durgapur-107016                  | 1672705916 |      15 | csbs      | 6630308 | clerk        |   1093 | 2022-11-16 |
+|     88 | Hazel Gade          | 07, Gupta Chowk
+Jhansi 454973                    | 7735220089 |       4 | csbs      | 3476686 | analyst      |   1115 | 2029-10-17 |
+|     13 | Amira Dyal          | H.No. 95
+Loke Nagar, Bidar-581206                | 7330549584 |      19 | csbs      | 5629468 | it professor |   1125 | 2016-05-29 |
+|     26 | Ishita Wadhwa       | H.No. 68, Chawla Chowk
+Yamunanagar 429284        | 7530873785 |       0 | csbs      | 2717233 | clerk        |   1159 | 1971-09-24 |
+|     14 | Lakshit Khanna      | 870
+Comar Path
+Kadapa 204034                     | 2483282115 |       5 | csbs      | 8745307 | it professor |   1169 | 1991-10-25 |
+|     59 | Nakul Chaudhari     | 454, Garg Circle
+Gudivada 376764                 | 8566990354 |      23 | csbs      | 4292826 | president    |   1174 | 2020-04-09 |
+|     46 | Jivika Bhasin       | 15/426
+Gandhi Street
+Kolhapur 724252             | 9496663807 |       4 | csbs      | 3652578 | president    |   1296 | 1979-03-26 |
+|     65 | Jayan Ratti         | 31/44
+Seshadri Nagar
+Bhopal-701746               | 9861012048 |      30 | csbs      | 9635582 | analyst      |   1385 | 2026-07-01 |
+|     56 | Darshit Dash        | H.No. 42
+Ramesh Circle
+Belgaum 076436            | 7404186141 |      20 | csbs      | 1402340 | manager      |   1407 | 2004-08-31 |
+|     39 | Mishti Dave         | 30/57
+Rama Road, Eluru-064572                    | 6296438816 |       2 | csbs      | 2110571 | analyst      |   1629 | 2030-07-23 |
+|      7 | Urvi Garg           | 520, Rajagopalan Ganj
+Saharanpur 905111          | 9317251913 |      18 | csbs      | 6271176 | clerk        |   1714 | 2017-03-12 |
+|     47 | Khushi Rajagopalan  | H.No. 847
+Deol Zila, Dibrugarh-872922            | 2399190271 |       9 | csbs      | 4214844 | manager      |   1940 | 1974-09-01 |
+|     42 | Reyansh Jha         | 617, Konda Zila, Malda-862346                    | 2376783260 |      20 | csbs      | 9730999 | clerk        |   2225 | 2026-03-17 |
+|     48 | Eshani Kar          | 87/17, Raj Chowk, Visakhapatnam-404779           | 8544586123 |       7 | csbs      | 6552946 | mgr          |   2231 | 1997-06-09 |
+|      8 | Ira Balakrishnan    | H.No. 766
+Sharma Marg, Ramgarh-061306            | 7860319225 |       1 | csbs      | 1984910 | it professor |   2307 | 2031-01-23 |
+|      6 | Krish Dubey         | 823, Kalita Ganj, Ghaziabad 691660               | 8104920856 |       6 | csbs      | 3379415 | president    |   2438 | 2023-01-03 |
+|     69 | Elakshi Chakrabarti | 18/850, Brahmbhatt Ganj
+Imphal-902807            | 4163489435 |      18 | csbs      | 7212661 | manager      |   2447 | 1974-12-08 |
+|     64 | Aradhya Iyengar     | 399
+Lanka Street
+Tenali-196768                   | 3379561760 |      13 | csbs      | 4727226 | it professor |   2593 | 2000-12-23 |
+|     53 | Mehul Gala          | H.No. 473, Lad Chowk
+Tiruppur-662052             | 3293328686 |       7 | csbs      | 6365742 | analyst      |   2646 | 2023-04-06 |
+|     97 | Taimur Walla        | H.No. 677, Suresh Street, Darbhanga-853621       | 4768417086 |       9 | csbs      | 7917828 | it professor |   2704 | 1978-05-03 |
+|     72 | Aayush Swamy        | 36/896, Date Street, Vasai-Virar-650849          | 2721634761 |       8 | csbs      | 3671933 | analyst      |   2824 | 2025-09-07 |
+|     43 | Sumer Bera          | H.No. 45, Raval Circle
+Ballia-443749             | 6675536480 |      20 | csbs      | 4324216 | manager      |   2830 | 2005-08-27 |
+|     81 | Heer Borra          | H.No. 557, Magar Zila, Arrah 967763              | 5929267306 |      14 | csbs      | 1812267 | it professor |   2845 | 1981-05-05 |
+|     10 | Gatik Sant          | 27/347
+Buch Road
+Malegaon-481030                 | 6033941038 |      23 | csbs      | 6918132 | president    |   2896 | 2028-07-24 |
+|      5 | Aradhya Kunda       | 15/28, Deshpande Ganj
+Jamnagar 273132            | 2442989356 |       2 | csbs      | 3632302 | analyst      |   2937 | 2019-09-16 |
+|     62 | Devansh Kamdar      | H.No. 507, Iyer Nagar
+Rourkela-873730            | 4978310750 |      14 | csbs      | 2781355 | president    |   3010 | 2008-05-07 |
+|     22 | Veer Balakrishnan   | 20/266, Taneja Ganj, Moradabad 740651            | 9500869701 |       6 | csbs      | 3694437 | analyst      |   3012 | 2025-04-16 |
+|     74 | Gokul Bhat          | H.No. 75, Kumer Circle
+Raipur-221883             | 6015575900 |      11 | csbs      | 3615717 | president    |   3066 | 2023-07-22 |
+|     30 | Kabir Tata          | 65/99
+Dora Ganj
+Karawal Nagar-566105             | 3287225267 |       5 | csbs      | 5459520 | mgr          |   3203 | 2009-01-05 |
+|      4 | Miraan Chatterjee   | 031, Shenoy Nagar, Haldia-873862                 | 1530508794 |      26 | csbs      | 6855207 | analyst      |   3318 | 1996-06-16 |
+|     41 | Emir Raval          | 81
+Madan Road, Rampur 311805                     | 4695561831 |      18 | csbs      | 7357676 | it professor |   3328 | 1979-01-04 |
+|     76 | Shanaya Dass        | 10/22, Kaur Road, Panihati-526309                | 2013394588 |      21 | csbs      | 9769974 | analyst      |   3593 | 1980-10-11 |
+|     23 | Dhanush Goda        | H.No. 014
+Gade Street
+Anand 001347               | 3866469843 |       6 | csbs      | 4054802 | it professor |   3643 | 2031-03-21 |
+|     95 | Yuvraj  Kamdar      | 97/639
+Sankar Path, Nangloi Jat 170216           | 7093624465 |       0 | csbs      | 4841150 | mgr          |   3719 | 2009-03-29 |
+|     92 | Stuvan Ray          | H.No. 725, Shere Zila
+Yamunanagar 972842         | 6034500905 |      14 | csbs      | 7738889 | mgr          |   3766 | 1974-11-09 |
+|     58 | Aaryahi Chaudhari   | 31/773
+Kulkarni Path
+Haridwar 350253             | 5853149146 |      21 | csbs      | 7391267 | president    |   3847 | 1990-07-09 |
+|    100 | Saira Saraf         | 134
+Goyal Road, Nizamabad-068697                 | 1746737413 |      19 | csbs      | 2434484 | mgr          |   3873 | 2017-02-06 |
+|     12 | Jayan Bahl          | 26/63
+Vaidya Road
+Jodhpur-597207                 | 9122338631 |      17 | csbs      | 6614679 | analyst      |   4101 | 1998-01-24 |
+|     18 | Shayak Mahal        | 90, Gaba
+Eluru-483402                            | 4978098115 |      19 | csbs      | 3011136 | president    |   4235 | 1992-10-19 |
+|     34 | Pihu Sule           | 387, Chandra
+Karaikudi 639219                    | 6989278861 |      10 | csbs      | 6475035 | manager      |   4275 | 2027-08-01 |
+|     71 | Reyansh Dada        | H.No. 558
+Majumdar
+Shahjahanpur-374295           | 4510034191 |       9 | csbs      | 6290693 | president    |   4457 | 2007-05-05 |
+|     60 | Aaina Bose          | H.No. 144, Gola, Chinsurah 774757                | 1742890922 |       0 | csbs      | 4445898 | clerk        |   4525 | 2016-10-25 |
+|     63 | Shamik Mane         | 91/335
+Ray Chowk, Noida 315638                   | 6203375531 |       5 | csbs      | 4150982 | clerk        |   4554 | 2030-08-01 |
+|     70 | Purab Venkatesh     | H.No. 60, Khurana, Unnao 836823                  | 7256403957 |      10 | csbs      | 8237480 | mgr          |   4617 | 2018-02-11 |
+|     17 | Abram Ravi          | 68/857, Gola Marg, Mangalore-437483              | 8776917926 |      29 | csbs      | 4822499 | mgr          |   4649 | 1970-09-04 |
+|     33 | Ranbir Dalal        | 30/064, Krishna Street, Mirzapur-353912          | 6818724194 |       1 | csbs      | 3328789 | clerk        |   4665 | 1980-09-29 |
+|     11 | Nakul Johal         | 33
+Saraf Street, Baranagar-691562                | 5924544280 |      18 | csbs      | 8364043 | mgr          |   4668 | 1994-06-19 |
+|     66 | Fateh Thakkar       | 71, Varkey Circle
+Aligarh 707050                 | 2581464737 |      20 | csbs      | 3615125 | mgr          |   4708 | 1987-08-05 |
+|     16 | Sana Bobal          | 96/276
+Dora Zila, Gangtok 261606                 | 3911844914 |       3 | csbs      | 5663903 | clerk        |   4759 | 1972-08-03 |
+|     98 | Miraya Handa        | 11/383, Bava Road
+Erode-499430                   | 6796353867 |      30 | csbs      | 4163880 | manager      |   4901 | 2003-11-26 |
+|     84 | Advika Chopra       | H.No. 061
+Garg, Udupi 005644                     | 1637473345 |      20 | csbs      | 6644682 | president    |   4912 | 1979-01-22 |
+|     91 | Kismat Warrior      | 18/230, Kapoor Road, Visakhapatnam-639083        | 2997089052 |      19 | csbs      | 7579467 | president    |   4917 | 2018-11-15 |
+|     75 | Anahita Suri        | H.No. 24
+Chad Street
+Mahbubnagar-663383          | 9987951629 |       3 | csbs      | 6601868 | clerk        |   5277 | 1992-07-17 |
+|     15 | Anay Korpal         | H.No. 53
+Kota Zila
+Aurangabad-000764             | 9907156401 |       3 | csbs      | 1308736 | mgr          |   5291 | 1995-08-16 |
+|      3 | Ranbir Walia        | H.No. 46
+Goswami Ganj
+Tumkur-674366              | 8043286987 |       8 | csbs      | 7555122 | analyst      |   5526 | 2024-11-19 |
+|     50 | Advik Kalla         | H.No. 462
+Kale Marg
+Bhopal-654347                | 8452801783 |      14 | csbs      | 2803997 | manager      |   5650 | 1996-04-29 |
+|     89 | Myra Sankaran       | 88/376
+Barad Street
+Ajmer-023474                 | 3290848861 |      12 | csbs      | 5454645 | clerk        |   5696 | 1990-02-28 |
+|     45 | Arhaan Ratti        | 459, Tara Road, Allahabad 646630                 | 3003224583 |      11 | csbs      | 2300841 | manager      |   5753 | 1999-04-13 |
+|     99 | Ahana  Bawa         | H.No. 23, Gole Ganj, Hyderabad 022843            | 8007677764 |      20 | csbs      | 2193235 | analyst      |   5959 | 2018-06-15 |
+|     57 | Heer Krishnan       | 10/332, Garg Marg, Aurangabad 849955             | 5278142094 |      22 | csbs      | 1721538 | mgr          |   5967 | 1991-03-06 |
+|     54 | Hiran Vohra         | 89/758
+Master, Karaikudi 678013                  | 8787525125 |      18 | csbs      | 4375604 | it professor |   6165 | 2015-02-23 |
+|     27 | Vihaan Gour         | 81
+Desai Nagar
+Nandyal 014155                    | 7605526092 |      16 | csbs      | 5627962 | president    |   6518 | 2030-06-11 |
+|     20 | Yasmin Kothari      | 55/11, Rajagopalan
+Rajahmundry-415643            | 7812180617 |      24 | csbs      | 6632373 | analyst      |   6630 | 1971-01-15 |
+|     51 | Yasmin Mahal        | H.No. 469, Wable Street
+Sultan Pur Majra 562401  | 9409021920 |      29 | csbs      | 1760584 | mgr          |   6709 | 1974-03-05 |
+|     93 | Nayantara Deshpande | 62/189, Gupta Zila
+Jamnagar-884728               | 1242810178 |       7 | csbs      | 2256081 | president    |   6750 | 2022-12-03 |
+|     49 | Lavanya Ganesan     | 06/83
+Ghose Zila, Berhampur 884595               | 1963715667 |      11 | csbs      | 2834082 | analyst      |   6873 | 1993-10-15 |
+|     85 | Shray Bera          | H.No. 856
+Shere Street
+Dewas 308216              | 7523482204 |      23 | csbs      | 5004838 | analyst      |   6998 | 1994-01-25 |
+|     32 | Shray Badal         | H.No. 69, Chopra Marg, Morbi-794764              | 1229059741 |      11 | csbs      | 4870957 | it professor |   7083 | 2021-08-07 |
+|     36 | Yakshit Rastogi     | 88, Sethi, Sri Ganganagar 323340                 | 3691091324 |      25 | csbs      | 7035871 | clerk        |   7265 | 2014-12-02 |
+|     73 | Rati Bir            | 92
+Chandra Zila
+Malda-428295                     | 7779026763 |      18 | csbs      | 1441822 | it professor |   7519 | 2004-11-20 |
+|     79 | Aaina Bassi         | 058
+Dugal Zila, Proddatur-638950                 | 6604178230 |       2 | csbs      | 1501507 | it professor |   7660 | 1976-01-15 |
+|     28 | Neelofar Iyer       | H.No. 232
+Thaker Nagar
+Bidhannagar-050087        | 6327063125 |      15 | csbs      | 9573588 | it professor |   7720 | 2011-01-14 |
+|     25 | Tiya Gour           | 192, Chhabra Path, Gaya 305638                   | 7224478579 |       0 | csbs      | 5683970 | clerk        |   7764 | 1973-12-20 |
+|     61 | Mohanlal Chhabra    | 221
+Babu Zila, Gorakhpur-288653                  | 1691487460 |      16 | csbs      | 2279199 | manager      |   7775 | 2032-08-19 |
+|     19 | Zoya Sekhon         | 32/839, Som Zila, Kochi 936652                   | 7322883191 |      15 | csbs      | 3240998 | mgr          |   7888 | 2015-04-23 |
+|     35 | Biju Vasa           | 04/19
+Apte Circle, Aurangabad-504786             | 7000798044 |       4 | csbs      | 8766721 | manager      |   7967 | 2025-10-05 |
+|     37 | Anahita Rau         | 23/198, Bhakta Street
+Kalyan-Dombivli 421981     | 2925591645 |      30 | csbs      | 7509930 | president    |   8014 | 1995-06-23 |
+|     55 | Mahika Bose         | 412, Sandal Chowk
+Kota-747762                    | 3628939059 |       5 | csbs      | 5838881 | manager      |   8018 | 1975-03-06 |
+|     82 | Azad Chopra         | H.No. 28, Sharma
+Jabalpur-846397                 | 9435261046 |       4 | csbs      | 8394079 | analyst      |   8159 | 2027-07-05 |
+|     87 | Ira Mandal          | H.No. 03, Rajagopalan Circle, Gandhinagar 954072 | 5615382593 |      14 | csbs      | 8236790 | analyst      |   8360 | 1997-07-14 |
+|      9 | Suhana Varkey       | 54/434, Sur Zila
+Eluru 998917                    | 4042645117 |      18 | csbs      | 6926617 | mgr          |   8375 | 1973-10-02 |
+|     24 | Aarush Bhargava     | H.No. 90
+Garg, Munger 488150                     | 7886271353 |       9 | csbs      | 6018261 | manager      |   8539 | 1992-12-12 |
+|     83 | Fateh Shroff        | 556
+Shroff Circle
+Ujjain 724521                  | 7910538298 |       5 | csbs      | 6953251 | analyst      |   8780 | 2003-11-26 |
+|     90 | Indrans Gill        | H.No. 19
+Agate Zila, Sri Ganganagar 467465       | 1616774578 |      19 | csbs      | 6234961 | clerk        |   9332 | 1980-08-01 |
+|     86 | Damini Dubey        | H.No. 11, Kashyap Ganj, Sambhal-617079           | 8400250595 |      30 | csbs      | 4204452 | clerk        |   9376 | 2024-11-29 |
+|     31 | Jivin Bakshi        | H.No. 531
+Bajaj, Meerut-603829                   | 1095266715 |      11 | csbs      | 4515965 | president    |   9492 | 1980-10-02 |
+|     52 | Jhanvi Golla        | H.No. 056
+Chakrabarti Street, Tirunelveli 107607 | 1613738399 |      10 | csbs      | 3480031 | mgr          |   9507 | 2007-11-04 |
+|     44 | Kashvi Kapoor       | H.No. 25, Kapur Path, Guna 756000                | 4622767577 |       5 | csbs      | 8518419 | clerk        |   9535 | 1983-08-18 |
+|     96 | Tushar Raval        | H.No. 932
+Kapadia Chowk, Dibrugarh 966089        | 7608375120 |      29 | csbs      | 4046532 | it professor |   9684 | 2026-08-18 |
+|     67 | Stuvan Chaudhary    | 736, Bahl Road, Jodhpur-822953                   | 4208800902 |      10 | csbs      | 9180836 | mgr          |   9790 | 2029-12-11 |
+|     94 | Shamik Saraf        | 39/91, Kibe Street, Belgaum-684445               | 4152444352 |      26 | csbs      | 2808295 | manager      |   9806 | 2015-03-03 |
+|     77 | Zain Srinivasan     | 46/661, Dada Path
+Thanjavur-690072               | 8049691823 |       4 | csbs      | 1418918 | manager      |   9920 | 1989-07-24 |
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+100 rows in set (0.001 sec)
+
+MariaDB [iem]> exit;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 17
+Server version: 11.4.2-MariaDB Arch Linux
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Reading history-file /home/cab1729/.local/state/mariadb/history
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [iem]> source code/3.sql;
+--------------
+create table if not exists employee(
+	emp_no int,
+	e_name varchar(32),
+	e_address text,
+	e_phone_no bigint,
+	dept_no int,
+	dept_name varchar(4),
+	job_id int,
+	designation varchar(15),
+	salary float,
+	hiredate date
+)
+--------------
+
+Query OK, 0 rows affected, 1 warning (0.001 sec)
+
+--------------
+select * from employee where designation='manager'
+--------------
+
++--------+---------------------+---------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+| emp_no | e_name              | e_address                             | e_phone_no | dept_no | dept_name | job_id  | designation | salary | hiredate   |
++--------+---------------------+---------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+|     24 | Aarush Bhargava     | H.No. 90
+Garg, Munger 488150          | 7886271353 |       9 | csbs      | 6018261 | manager     |   8539 | 1992-12-12 |
+|     29 | Kavya Swaminathan   | 97/58
+Cheema
+Ambarnath 046918         | 8544572080 |      23 | csbs      | 4319399 | manager     |    244 | 2012-11-07 |
+|     34 | Pihu Sule           | 387, Chandra
+Karaikudi 639219         | 6989278861 |      10 | csbs      | 6475035 | manager     |   4275 | 2027-08-01 |
+|     35 | Biju Vasa           | 04/19
+Apte Circle, Aurangabad-504786  | 7000798044 |       4 | csbs      | 8766721 | manager     |   7967 | 2025-10-05 |
+|     40 | Anay Sharma         | 00/957
+Yadav Circle
+Sonipat 396722    | 7881050758 |      19 | csbs      | 9099392 | manager     |   1043 | 2002-02-03 |
+|     43 | Sumer Bera          | H.No. 45, Raval Circle
+Ballia-443749  | 6675536480 |      20 | csbs      | 4324216 | manager     |   2830 | 2005-08-27 |
+|     45 | Arhaan Ratti        | 459, Tara Road, Allahabad 646630      | 3003224583 |      11 | csbs      | 2300841 | manager     |   5753 | 1999-04-13 |
+|     47 | Khushi Rajagopalan  | H.No. 847
+Deol Zila, Dibrugarh-872922 | 2399190271 |       9 | csbs      | 4214844 | manager     |   1940 | 1974-09-01 |
+|     50 | Advik Kalla         | H.No. 462
+Kale Marg
+Bhopal-654347     | 8452801783 |      14 | csbs      | 2803997 | manager     |   5650 | 1996-04-29 |
+|     55 | Mahika Bose         | 412, Sandal Chowk
+Kota-747762         | 3628939059 |       5 | csbs      | 5838881 | manager     |   8018 | 1975-03-06 |
+|     56 | Darshit Dash        | H.No. 42
+Ramesh Circle
+Belgaum 076436 | 7404186141 |      20 | csbs      | 1402340 | manager     |   1407 | 2004-08-31 |
+|     61 | Mohanlal Chhabra    | 221
+Babu Zila, Gorakhpur-288653       | 1691487460 |      16 | csbs      | 2279199 | manager     |   7775 | 2032-08-19 |
+|     69 | Elakshi Chakrabarti | 18/850, Brahmbhatt Ganj
+Imphal-902807 | 4163489435 |      18 | csbs      | 7212661 | manager     |   2447 | 1974-12-08 |
+|     77 | Zain Srinivasan     | 46/661, Dada Path
+Thanjavur-690072    | 8049691823 |       4 | csbs      | 1418918 | manager     |   9920 | 1989-07-24 |
+|     94 | Shamik Saraf        | 39/91, Kibe Street, Belgaum-684445    | 4152444352 |      26 | csbs      | 2808295 | manager     |   9806 | 2015-03-03 |
+|     98 | Miraya Handa        | 11/383, Bava Road
+Erode-499430        | 6796353867 |      30 | csbs      | 4163880 | manager     |   4901 | 2003-11-26 |
++--------+---------------------+---------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+16 rows in set (0.003 sec)
+
+--------------
+select * from employee where salary>(select max(salary) from employee where designation="it professor")
+--------------
+
++--------+------------------+------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+| emp_no | e_name           | e_address                          | e_phone_no | dept_no | dept_name | job_id  | designation | salary | hiredate   |
++--------+------------------+------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+|     67 | Stuvan Chaudhary | 736, Bahl Road, Jodhpur-822953     | 4208800902 |      10 | csbs      | 9180836 | mgr         |   9790 | 2029-12-11 |
+|     77 | Zain Srinivasan  | 46/661, Dada Path
+Thanjavur-690072 | 8049691823 |       4 | csbs      | 1418918 | manager     |   9920 | 1989-07-24 |
+|     94 | Shamik Saraf     | 39/91, Kibe Street, Belgaum-684445 | 4152444352 |      26 | csbs      | 2808295 | manager     |   9806 | 2015-03-03 |
++--------+------------------+------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+3 rows in set (0.004 sec)
+
+--------------
+select * from employee where hiredate>'1980-12-31'
+--------------
+
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+| emp_no | e_name              | e_address                                        | e_phone_no | dept_no | dept_name | job_id  | designation  | salary | hiredate   |
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+|      2 | Uthkarsh Bajwa      | 301
+Chauhan Chowk, Buxar 078715                  | 2178336902 |      14 | csbs      | 2559870 | clerk        |    999 | 1991-10-31 |
+|      3 | Ranbir Walia        | H.No. 46
+Goswami Ganj
+Tumkur-674366              | 8043286987 |       8 | csbs      | 7555122 | analyst      |   5526 | 2024-11-19 |
+|      4 | Miraan Chatterjee   | 031, Shenoy Nagar, Haldia-873862                 | 1530508794 |      26 | csbs      | 6855207 | analyst      |   3318 | 1996-06-16 |
+|      5 | Aradhya Kunda       | 15/28, Deshpande Ganj
+Jamnagar 273132            | 2442989356 |       2 | csbs      | 3632302 | analyst      |   2937 | 2019-09-16 |
+|      6 | Krish Dubey         | 823, Kalita Ganj, Ghaziabad 691660               | 8104920856 |       6 | csbs      | 3379415 | president    |   2438 | 2023-01-03 |
+|      7 | Urvi Garg           | 520, Rajagopalan Ganj
+Saharanpur 905111          | 9317251913 |      18 | csbs      | 6271176 | clerk        |   1714 | 2017-03-12 |
+|      8 | Ira Balakrishnan    | H.No. 766
+Sharma Marg, Ramgarh-061306            | 7860319225 |       1 | csbs      | 1984910 | it professor |   2307 | 2031-01-23 |
+|     10 | Gatik Sant          | 27/347
+Buch Road
+Malegaon-481030                 | 6033941038 |      23 | csbs      | 6918132 | president    |   2896 | 2028-07-24 |
+|     11 | Nakul Johal         | 33
+Saraf Street, Baranagar-691562                | 5924544280 |      18 | csbs      | 8364043 | mgr          |   4668 | 1994-06-19 |
+|     12 | Jayan Bahl          | 26/63
+Vaidya Road
+Jodhpur-597207                 | 9122338631 |      17 | csbs      | 6614679 | analyst      |   4101 | 1998-01-24 |
+|     13 | Amira Dyal          | H.No. 95
+Loke Nagar, Bidar-581206                | 7330549584 |      19 | csbs      | 5629468 | it professor |   1125 | 2016-05-29 |
+|     14 | Lakshit Khanna      | 870
+Comar Path
+Kadapa 204034                     | 2483282115 |       5 | csbs      | 8745307 | it professor |   1169 | 1991-10-25 |
+|     15 | Anay Korpal         | H.No. 53
+Kota Zila
+Aurangabad-000764             | 9907156401 |       3 | csbs      | 1308736 | mgr          |   5291 | 1995-08-16 |
+|     18 | Shayak Mahal        | 90, Gaba
+Eluru-483402                            | 4978098115 |      19 | csbs      | 3011136 | president    |   4235 | 1992-10-19 |
+|     19 | Zoya Sekhon         | 32/839, Som Zila, Kochi 936652                   | 7322883191 |      15 | csbs      | 3240998 | mgr          |   7888 | 2015-04-23 |
+|     21 | Amira Viswanathan   | H.No. 699, Badal
+Phagwara-520144                 | 7993860047 |       9 | csbs      | 9583819 | analyst      |   1009 | 1995-07-09 |
+|     22 | Veer Balakrishnan   | 20/266, Taneja Ganj, Moradabad 740651            | 9500869701 |       6 | csbs      | 3694437 | analyst      |   3012 | 2025-04-16 |
+|     23 | Dhanush Goda        | H.No. 014
+Gade Street
+Anand 001347               | 3866469843 |       6 | csbs      | 4054802 | it professor |   3643 | 2031-03-21 |
+|     24 | Aarush Bhargava     | H.No. 90
+Garg, Munger 488150                     | 7886271353 |       9 | csbs      | 6018261 | manager      |   8539 | 1992-12-12 |
+|     27 | Vihaan Gour         | 81
+Desai Nagar
+Nandyal 014155                    | 7605526092 |      16 | csbs      | 5627962 | president    |   6518 | 2030-06-11 |
+|     28 | Neelofar Iyer       | H.No. 232
+Thaker Nagar
+Bidhannagar-050087        | 6327063125 |      15 | csbs      | 9573588 | it professor |   7720 | 2011-01-14 |
+|     29 | Kavya Swaminathan   | 97/58
+Cheema
+Ambarnath 046918                    | 8544572080 |      23 | csbs      | 4319399 | manager      |    244 | 2012-11-07 |
+|     30 | Kabir Tata          | 65/99
+Dora Ganj
+Karawal Nagar-566105             | 3287225267 |       5 | csbs      | 5459520 | mgr          |   3203 | 2009-01-05 |
+|     32 | Shray Badal         | H.No. 69, Chopra Marg, Morbi-794764              | 1229059741 |      11 | csbs      | 4870957 | it professor |   7083 | 2021-08-07 |
+|     34 | Pihu Sule           | 387, Chandra
+Karaikudi 639219                    | 6989278861 |      10 | csbs      | 6475035 | manager      |   4275 | 2027-08-01 |
+|     35 | Biju Vasa           | 04/19
+Apte Circle, Aurangabad-504786             | 7000798044 |       4 | csbs      | 8766721 | manager      |   7967 | 2025-10-05 |
+|     36 | Yakshit Rastogi     | 88, Sethi, Sri Ganganagar 323340                 | 3691091324 |      25 | csbs      | 7035871 | clerk        |   7265 | 2014-12-02 |
+|     37 | Anahita Rau         | 23/198, Bhakta Street
+Kalyan-Dombivli 421981     | 2925591645 |      30 | csbs      | 7509930 | president    |   8014 | 1995-06-23 |
+|     38 | Saira Bajwa         | 462
+Arora Path, Hosur-114429                     | 1147638554 |      21 | csbs      | 1252608 | clerk        |    661 | 1986-01-20 |
+|     39 | Mishti Dave         | 30/57
+Rama Road, Eluru-064572                    | 6296438816 |       2 | csbs      | 2110571 | analyst      |   1629 | 2030-07-23 |
+|     40 | Anay Sharma         | 00/957
+Yadav Circle
+Sonipat 396722               | 7881050758 |      19 | csbs      | 9099392 | manager      |   1043 | 2002-02-03 |
+|     42 | Reyansh Jha         | 617, Konda Zila, Malda-862346                    | 2376783260 |      20 | csbs      | 9730999 | clerk        |   2225 | 2026-03-17 |
+|     43 | Sumer Bera          | H.No. 45, Raval Circle
+Ballia-443749             | 6675536480 |      20 | csbs      | 4324216 | manager      |   2830 | 2005-08-27 |
+|     44 | Kashvi Kapoor       | H.No. 25, Kapur Path, Guna 756000                | 4622767577 |       5 | csbs      | 8518419 | clerk        |   9535 | 1983-08-18 |
+|     45 | Arhaan Ratti        | 459, Tara Road, Allahabad 646630                 | 3003224583 |      11 | csbs      | 2300841 | manager      |   5753 | 1999-04-13 |
+|     48 | Eshani Kar          | 87/17, Raj Chowk, Visakhapatnam-404779           | 8544586123 |       7 | csbs      | 6552946 | mgr          |   2231 | 1997-06-09 |
+|     49 | Lavanya Ganesan     | 06/83
+Ghose Zila, Berhampur 884595               | 1963715667 |      11 | csbs      | 2834082 | analyst      |   6873 | 1993-10-15 |
+|     50 | Advik Kalla         | H.No. 462
+Kale Marg
+Bhopal-654347                | 8452801783 |      14 | csbs      | 2803997 | manager      |   5650 | 1996-04-29 |
+|     52 | Jhanvi Golla        | H.No. 056
+Chakrabarti Street, Tirunelveli 107607 | 1613738399 |      10 | csbs      | 3480031 | mgr          |   9507 | 2007-11-04 |
+|     53 | Mehul Gala          | H.No. 473, Lad Chowk
+Tiruppur-662052             | 3293328686 |       7 | csbs      | 6365742 | analyst      |   2646 | 2023-04-06 |
+|     54 | Hiran Vohra         | 89/758
+Master, Karaikudi 678013                  | 8787525125 |      18 | csbs      | 4375604 | it professor |   6165 | 2015-02-23 |
+|     56 | Darshit Dash        | H.No. 42
+Ramesh Circle
+Belgaum 076436            | 7404186141 |      20 | csbs      | 1402340 | manager      |   1407 | 2004-08-31 |
+|     57 | Heer Krishnan       | 10/332, Garg Marg, Aurangabad 849955             | 5278142094 |      22 | csbs      | 1721538 | mgr          |   5967 | 1991-03-06 |
+|     58 | Aaryahi Chaudhari   | 31/773
+Kulkarni Path
+Haridwar 350253             | 5853149146 |      21 | csbs      | 7391267 | president    |   3847 | 1990-07-09 |
+|     59 | Nakul Chaudhari     | 454, Garg Circle
+Gudivada 376764                 | 8566990354 |      23 | csbs      | 4292826 | president    |   1174 | 2020-04-09 |
+|     60 | Aaina Bose          | H.No. 144, Gola, Chinsurah 774757                | 1742890922 |       0 | csbs      | 4445898 | clerk        |   4525 | 2016-10-25 |
+|     61 | Mohanlal Chhabra    | 221
+Babu Zila, Gorakhpur-288653                  | 1691487460 |      16 | csbs      | 2279199 | manager      |   7775 | 2032-08-19 |
+|     62 | Devansh Kamdar      | H.No. 507, Iyer Nagar
+Rourkela-873730            | 4978310750 |      14 | csbs      | 2781355 | president    |   3010 | 2008-05-07 |
+|     63 | Shamik Mane         | 91/335
+Ray Chowk, Noida 315638                   | 6203375531 |       5 | csbs      | 4150982 | clerk        |   4554 | 2030-08-01 |
+|     64 | Aradhya Iyengar     | 399
+Lanka Street
+Tenali-196768                   | 3379561760 |      13 | csbs      | 4727226 | it professor |   2593 | 2000-12-23 |
+|     65 | Jayan Ratti         | 31/44
+Seshadri Nagar
+Bhopal-701746               | 9861012048 |      30 | csbs      | 9635582 | analyst      |   1385 | 2026-07-01 |
+|     66 | Fateh Thakkar       | 71, Varkey Circle
+Aligarh 707050                 | 2581464737 |      20 | csbs      | 3615125 | mgr          |   4708 | 1987-08-05 |
+|     67 | Stuvan Chaudhary    | 736, Bahl Road, Jodhpur-822953                   | 4208800902 |      10 | csbs      | 9180836 | mgr          |   9790 | 2029-12-11 |
+|     68 | Diya Bajwa          | 68
+Khare Road, Yamunanagar-301158                | 4520269444 |      19 | csbs      | 6959540 | president    |    155 | 1993-01-05 |
+|     70 | Purab Venkatesh     | H.No. 60, Khurana, Unnao 836823                  | 7256403957 |      10 | csbs      | 8237480 | mgr          |   4617 | 2018-02-11 |
+|     71 | Reyansh Dada        | H.No. 558
+Majumdar
+Shahjahanpur-374295           | 4510034191 |       9 | csbs      | 6290693 | president    |   4457 | 2007-05-05 |
+|     72 | Aayush Swamy        | 36/896, Date Street, Vasai-Virar-650849          | 2721634761 |       8 | csbs      | 3671933 | analyst      |   2824 | 2025-09-07 |
+|     73 | Rati Bir            | 92
+Chandra Zila
+Malda-428295                     | 7779026763 |      18 | csbs      | 1441822 | it professor |   7519 | 2004-11-20 |
+|     74 | Gokul Bhat          | H.No. 75, Kumer Circle
+Raipur-221883             | 6015575900 |      11 | csbs      | 3615717 | president    |   3066 | 2023-07-22 |
+|     75 | Anahita Suri        | H.No. 24
+Chad Street
+Mahbubnagar-663383          | 9987951629 |       3 | csbs      | 6601868 | clerk        |   5277 | 1992-07-17 |
+|     77 | Zain Srinivasan     | 46/661, Dada Path
+Thanjavur-690072               | 8049691823 |       4 | csbs      | 1418918 | manager      |   9920 | 1989-07-24 |
+|     78 | Vanya Gade          | 811, Sami Marg, Durgapur-107016                  | 1672705916 |      15 | csbs      | 6630308 | clerk        |   1093 | 2022-11-16 |
+|     80 | Kaira Sarraf        | 82/150, Kala Marg
+Bahraich 541163                | 2847523000 |      25 | csbs      | 3176297 | mgr          |    356 | 2013-06-18 |
+|     81 | Heer Borra          | H.No. 557, Magar Zila, Arrah 967763              | 5929267306 |      14 | csbs      | 1812267 | it professor |   2845 | 1981-05-05 |
+|     82 | Azad Chopra         | H.No. 28, Sharma
+Jabalpur-846397                 | 9435261046 |       4 | csbs      | 8394079 | analyst      |   8159 | 2027-07-05 |
+|     83 | Fateh Shroff        | 556
+Shroff Circle
+Ujjain 724521                  | 7910538298 |       5 | csbs      | 6953251 | analyst      |   8780 | 2003-11-26 |
+|     85 | Shray Bera          | H.No. 856
+Shere Street
+Dewas 308216              | 7523482204 |      23 | csbs      | 5004838 | analyst      |   6998 | 1994-01-25 |
+|     86 | Damini Dubey        | H.No. 11, Kashyap Ganj, Sambhal-617079           | 8400250595 |      30 | csbs      | 4204452 | clerk        |   9376 | 2024-11-29 |
+|     87 | Ira Mandal          | H.No. 03, Rajagopalan Circle, Gandhinagar 954072 | 5615382593 |      14 | csbs      | 8236790 | analyst      |   8360 | 1997-07-14 |
+|     88 | Hazel Gade          | 07, Gupta Chowk
+Jhansi 454973                    | 7735220089 |       4 | csbs      | 3476686 | analyst      |   1115 | 2029-10-17 |
+|     89 | Myra Sankaran       | 88/376
+Barad Street
+Ajmer-023474                 | 3290848861 |      12 | csbs      | 5454645 | clerk        |   5696 | 1990-02-28 |
+|     91 | Kismat Warrior      | 18/230, Kapoor Road, Visakhapatnam-639083        | 2997089052 |      19 | csbs      | 7579467 | president    |   4917 | 2018-11-15 |
+|     93 | Nayantara Deshpande | 62/189, Gupta Zila
+Jamnagar-884728               | 1242810178 |       7 | csbs      | 2256081 | president    |   6750 | 2022-12-03 |
+|     94 | Shamik Saraf        | 39/91, Kibe Street, Belgaum-684445               | 4152444352 |      26 | csbs      | 2808295 | manager      |   9806 | 2015-03-03 |
+|     95 | Yuvraj  Kamdar      | 97/639
+Sankar Path, Nangloi Jat 170216           | 7093624465 |       0 | csbs      | 4841150 | mgr          |   3719 | 2009-03-29 |
+|     96 | Tushar Raval        | H.No. 932
+Kapadia Chowk, Dibrugarh 966089        | 7608375120 |      29 | csbs      | 4046532 | it professor |   9684 | 2026-08-18 |
+|     98 | Miraya Handa        | 11/383, Bava Road
+Erode-499430                   | 6796353867 |      30 | csbs      | 4163880 | manager      |   4901 | 2003-11-26 |
+|     99 | Ahana  Bawa         | H.No. 23, Gole Ganj, Hyderabad 022843            | 8007677764 |      20 | csbs      | 2193235 | analyst      |   5959 | 2018-06-15 |
+|    100 | Saira Saraf         | 134
+Goyal Road, Nizamabad-068697                 | 1746737413 |      19 | csbs      | 2434484 | mgr          |   3873 | 2017-02-06 |
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+79 rows in set (0.002 sec)
+
+--------------
+select * from employee where designation='clerk' or designation='analyst'
+--------------
+
++--------+-------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+| emp_no | e_name            | e_address                                        | e_phone_no | dept_no | dept_name | job_id  | designation | salary | hiredate   |
++--------+-------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+|      2 | Uthkarsh Bajwa    | 301
+Chauhan Chowk, Buxar 078715                  | 2178336902 |      14 | csbs      | 2559870 | clerk       |    999 | 1991-10-31 |
+|      3 | Ranbir Walia      | H.No. 46
+Goswami Ganj
+Tumkur-674366              | 8043286987 |       8 | csbs      | 7555122 | analyst     |   5526 | 2024-11-19 |
+|      4 | Miraan Chatterjee | 031, Shenoy Nagar, Haldia-873862                 | 1530508794 |      26 | csbs      | 6855207 | analyst     |   3318 | 1996-06-16 |
+|      5 | Aradhya Kunda     | 15/28, Deshpande Ganj
+Jamnagar 273132            | 2442989356 |       2 | csbs      | 3632302 | analyst     |   2937 | 2019-09-16 |
+|      7 | Urvi Garg         | 520, Rajagopalan Ganj
+Saharanpur 905111          | 9317251913 |      18 | csbs      | 6271176 | clerk       |   1714 | 2017-03-12 |
+|     12 | Jayan Bahl        | 26/63
+Vaidya Road
+Jodhpur-597207                 | 9122338631 |      17 | csbs      | 6614679 | analyst     |   4101 | 1998-01-24 |
+|     16 | Sana Bobal        | 96/276
+Dora Zila, Gangtok 261606                 | 3911844914 |       3 | csbs      | 5663903 | clerk       |   4759 | 1972-08-03 |
+|     20 | Yasmin Kothari    | 55/11, Rajagopalan
+Rajahmundry-415643            | 7812180617 |      24 | csbs      | 6632373 | analyst     |   6630 | 1971-01-15 |
+|     21 | Amira Viswanathan | H.No. 699, Badal
+Phagwara-520144                 | 7993860047 |       9 | csbs      | 9583819 | analyst     |   1009 | 1995-07-09 |
+|     22 | Veer Balakrishnan | 20/266, Taneja Ganj, Moradabad 740651            | 9500869701 |       6 | csbs      | 3694437 | analyst     |   3012 | 2025-04-16 |
+|     25 | Tiya Gour         | 192, Chhabra Path, Gaya 305638                   | 7224478579 |       0 | csbs      | 5683970 | clerk       |   7764 | 1973-12-20 |
+|     26 | Ishita Wadhwa     | H.No. 68, Chawla Chowk
+Yamunanagar 429284        | 7530873785 |       0 | csbs      | 2717233 | clerk       |   1159 | 1971-09-24 |
+|     33 | Ranbir Dalal      | 30/064, Krishna Street, Mirzapur-353912          | 6818724194 |       1 | csbs      | 3328789 | clerk       |   4665 | 1980-09-29 |
+|     36 | Yakshit Rastogi   | 88, Sethi, Sri Ganganagar 323340                 | 3691091324 |      25 | csbs      | 7035871 | clerk       |   7265 | 2014-12-02 |
+|     38 | Saira Bajwa       | 462
+Arora Path, Hosur-114429                     | 1147638554 |      21 | csbs      | 1252608 | clerk       |    661 | 1986-01-20 |
+|     39 | Mishti Dave       | 30/57
+Rama Road, Eluru-064572                    | 6296438816 |       2 | csbs      | 2110571 | analyst     |   1629 | 2030-07-23 |
+|     42 | Reyansh Jha       | 617, Konda Zila, Malda-862346                    | 2376783260 |      20 | csbs      | 9730999 | clerk       |   2225 | 2026-03-17 |
+|     44 | Kashvi Kapoor     | H.No. 25, Kapur Path, Guna 756000                | 4622767577 |       5 | csbs      | 8518419 | clerk       |   9535 | 1983-08-18 |
+|     49 | Lavanya Ganesan   | 06/83
+Ghose Zila, Berhampur 884595               | 1963715667 |      11 | csbs      | 2834082 | analyst     |   6873 | 1993-10-15 |
+|     53 | Mehul Gala        | H.No. 473, Lad Chowk
+Tiruppur-662052             | 3293328686 |       7 | csbs      | 6365742 | analyst     |   2646 | 2023-04-06 |
+|     60 | Aaina Bose        | H.No. 144, Gola, Chinsurah 774757                | 1742890922 |       0 | csbs      | 4445898 | clerk       |   4525 | 2016-10-25 |
+|     63 | Shamik Mane       | 91/335
+Ray Chowk, Noida 315638                   | 6203375531 |       5 | csbs      | 4150982 | clerk       |   4554 | 2030-08-01 |
+|     65 | Jayan Ratti       | 31/44
+Seshadri Nagar
+Bhopal-701746               | 9861012048 |      30 | csbs      | 9635582 | analyst     |   1385 | 2026-07-01 |
+|     72 | Aayush Swamy      | 36/896, Date Street, Vasai-Virar-650849          | 2721634761 |       8 | csbs      | 3671933 | analyst     |   2824 | 2025-09-07 |
+|     75 | Anahita Suri      | H.No. 24
+Chad Street
+Mahbubnagar-663383          | 9987951629 |       3 | csbs      | 6601868 | clerk       |   5277 | 1992-07-17 |
+|     76 | Shanaya Dass      | 10/22, Kaur Road, Panihati-526309                | 2013394588 |      21 | csbs      | 9769974 | analyst     |   3593 | 1980-10-11 |
+|     78 | Vanya Gade        | 811, Sami Marg, Durgapur-107016                  | 1672705916 |      15 | csbs      | 6630308 | clerk       |   1093 | 2022-11-16 |
+|     82 | Azad Chopra       | H.No. 28, Sharma
+Jabalpur-846397                 | 9435261046 |       4 | csbs      | 8394079 | analyst     |   8159 | 2027-07-05 |
+|     83 | Fateh Shroff      | 556
+Shroff Circle
+Ujjain 724521                  | 7910538298 |       5 | csbs      | 6953251 | analyst     |   8780 | 2003-11-26 |
+|     85 | Shray Bera        | H.No. 856
+Shere Street
+Dewas 308216              | 7523482204 |      23 | csbs      | 5004838 | analyst     |   6998 | 1994-01-25 |
+|     86 | Damini Dubey      | H.No. 11, Kashyap Ganj, Sambhal-617079           | 8400250595 |      30 | csbs      | 4204452 | clerk       |   9376 | 2024-11-29 |
+|     87 | Ira Mandal        | H.No. 03, Rajagopalan Circle, Gandhinagar 954072 | 5615382593 |      14 | csbs      | 8236790 | analyst     |   8360 | 1997-07-14 |
+|     88 | Hazel Gade        | 07, Gupta Chowk
+Jhansi 454973                    | 7735220089 |       4 | csbs      | 3476686 | analyst     |   1115 | 2029-10-17 |
+|     89 | Myra Sankaran     | 88/376
+Barad Street
+Ajmer-023474                 | 3290848861 |      12 | csbs      | 5454645 | clerk       |   5696 | 1990-02-28 |
+|     90 | Indrans Gill      | H.No. 19
+Agate Zila, Sri Ganganagar 467465       | 1616774578 |      19 | csbs      | 6234961 | clerk       |   9332 | 1980-08-01 |
+|     99 | Ahana  Bawa       | H.No. 23, Gole Ganj, Hyderabad 022843            | 8007677764 |      20 | csbs      | 2193235 | analyst     |   5959 | 2018-06-15 |
++--------+-------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+36 rows in set (0.001 sec)
+
+--------------
+select * from employee where hiredate='1981-04-01' or hiredate='1981-12-03' or hiredate='1981-12-17' or hiredate='1980-01-19'
+--------------
+
+Empty set (0.003 sec)
+
+--------------
+select * from employee where dept_no=10 or dept_no=20
+--------------
+
++--------+------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+| emp_no | e_name           | e_address                                        | e_phone_no | dept_no | dept_name | job_id  | designation | salary | hiredate   |
++--------+------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+|     34 | Pihu Sule        | 387, Chandra
+Karaikudi 639219                    | 6989278861 |      10 | csbs      | 6475035 | manager     |   4275 | 2027-08-01 |
+|     42 | Reyansh Jha      | 617, Konda Zila, Malda-862346                    | 2376783260 |      20 | csbs      | 9730999 | clerk       |   2225 | 2026-03-17 |
+|     43 | Sumer Bera       | H.No. 45, Raval Circle
+Ballia-443749             | 6675536480 |      20 | csbs      | 4324216 | manager     |   2830 | 2005-08-27 |
+|     52 | Jhanvi Golla     | H.No. 056
+Chakrabarti Street, Tirunelveli 107607 | 1613738399 |      10 | csbs      | 3480031 | mgr         |   9507 | 2007-11-04 |
+|     56 | Darshit Dash     | H.No. 42
+Ramesh Circle
+Belgaum 076436            | 7404186141 |      20 | csbs      | 1402340 | manager     |   1407 | 2004-08-31 |
+|     66 | Fateh Thakkar    | 71, Varkey Circle
+Aligarh 707050                 | 2581464737 |      20 | csbs      | 3615125 | mgr         |   4708 | 1987-08-05 |
+|     67 | Stuvan Chaudhary | 736, Bahl Road, Jodhpur-822953                   | 4208800902 |      10 | csbs      | 9180836 | mgr         |   9790 | 2029-12-11 |
+|     70 | Purab Venkatesh  | H.No. 60, Khurana, Unnao 836823                  | 7256403957 |      10 | csbs      | 8237480 | mgr         |   4617 | 2018-02-11 |
+|     84 | Advika Chopra    | H.No. 061
+Garg, Udupi 005644                     | 1637473345 |      20 | csbs      | 6644682 | president   |   4912 | 1979-01-22 |
+|     99 | Ahana  Bawa      | H.No. 23, Gole Ganj, Hyderabad 022843            | 8007677764 |      20 | csbs      | 2193235 | analyst     |   5959 | 2018-06-15 |
++--------+------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+10 rows in set (0.002 sec)
+
+--------------
+select * from employee where (e_name like "S%")
+--------------
+
++--------+------------------+------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+| emp_no | e_name           | e_address                                | e_phone_no | dept_no | dept_name | job_id  | designation  | salary | hiredate   |
++--------+------------------+------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+|      9 | Suhana Varkey    | 54/434, Sur Zila
+Eluru 998917            | 4042645117 |      18 | csbs      | 6926617 | mgr          |   8375 | 1973-10-02 |
+|     16 | Sana Bobal       | 96/276
+Dora Zila, Gangtok 261606         | 3911844914 |       3 | csbs      | 5663903 | clerk        |   4759 | 1972-08-03 |
+|     18 | Shayak Mahal     | 90, Gaba
+Eluru-483402                    | 4978098115 |      19 | csbs      | 3011136 | president    |   4235 | 1992-10-19 |
+|     32 | Shray Badal      | H.No. 69, Chopra Marg, Morbi-794764      | 1229059741 |      11 | csbs      | 4870957 | it professor |   7083 | 2021-08-07 |
+|     38 | Saira Bajwa      | 462
+Arora Path, Hosur-114429             | 1147638554 |      21 | csbs      | 1252608 | clerk        |    661 | 1986-01-20 |
+|     43 | Sumer Bera       | H.No. 45, Raval Circle
+Ballia-443749     | 6675536480 |      20 | csbs      | 4324216 | manager      |   2830 | 2005-08-27 |
+|     63 | Shamik Mane      | 91/335
+Ray Chowk, Noida 315638           | 6203375531 |       5 | csbs      | 4150982 | clerk        |   4554 | 2030-08-01 |
+|     67 | Stuvan Chaudhary | 736, Bahl Road, Jodhpur-822953           | 4208800902 |      10 | csbs      | 9180836 | mgr          |   9790 | 2029-12-11 |
+|     76 | Shanaya Dass     | 10/22, Kaur Road, Panihati-526309        | 2013394588 |      21 | csbs      | 9769974 | analyst      |   3593 | 1980-10-11 |
+|     85 | Shray Bera       | H.No. 856
+Shere Street
+Dewas 308216      | 7523482204 |      23 | csbs      | 5004838 | analyst      |   6998 | 1994-01-25 |
+|     92 | Stuvan Ray       | H.No. 725, Shere Zila
+Yamunanagar 972842 | 6034500905 |      14 | csbs      | 7738889 | mgr          |   3766 | 1974-11-09 |
+|     94 | Shamik Saraf     | 39/91, Kibe Street, Belgaum-684445       | 4152444352 |      26 | csbs      | 2808295 | manager      |   9806 | 2015-03-03 |
+|    100 | Saira Saraf      | 134
+Goyal Road, Nizamabad-068697         | 1746737413 |      19 | csbs      | 2434484 | mgr          |   3873 | 2017-02-06 |
++--------+------------------+------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+13 rows in set (0.001 sec)
+
+--------------
+select * from employee where (e_name like "H_____%")
+--------------
+
++--------+---------------+--------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+| emp_no | e_name        | e_address                            | e_phone_no | dept_no | dept_name | job_id  | designation  | salary | hiredate   |
++--------+---------------+--------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+|     54 | Hiran Vohra   | 89/758
+Master, Karaikudi 678013      | 8787525125 |      18 | csbs      | 4375604 | it professor |   6165 | 2015-02-23 |
+|     57 | Heer Krishnan | 10/332, Garg Marg, Aurangabad 849955 | 5278142094 |      22 | csbs      | 1721538 | mgr          |   5967 | 1991-03-06 |
+|     81 | Heer Borra    | H.No. 557, Magar Zila, Arrah 967763  | 5929267306 |      14 | csbs      | 1812267 | it professor |   2845 | 1981-05-05 |
+|     88 | Hazel Gade    | 07, Gupta Chowk
+Jhansi 454973        | 7735220089 |       4 | csbs      | 3476686 | analyst      |   1115 | 2029-10-17 |
++--------+---------------+--------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+4 rows in set (0.002 sec)
+
+--------------
+select * from employee where designation!='president' or designation!='mgr' order by salary
+--------------
+
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+| emp_no | e_name              | e_address                                        | e_phone_no | dept_no | dept_name | job_id  | designation  | salary | hiredate   |
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+|     68 | Diya Bajwa          | 68
+Khare Road, Yamunanagar-301158                | 4520269444 |      19 | csbs      | 6959540 | president    |    155 | 1993-01-05 |
+|     29 | Kavya Swaminathan   | 97/58
+Cheema
+Ambarnath 046918                    | 8544572080 |      23 | csbs      | 4319399 | manager      |    244 | 2012-11-07 |
+|     80 | Kaira Sarraf        | 82/150, Kala Marg
+Bahraich 541163                | 2847523000 |      25 | csbs      | 3176297 | mgr          |    356 | 2013-06-18 |
+|     38 | Saira Bajwa         | 462
+Arora Path, Hosur-114429                     | 1147638554 |      21 | csbs      | 1252608 | clerk        |    661 | 1986-01-20 |
+|      1 | Yashvi Dhingra      | H.No. 65
+Hari Road
+Maheshtala 907219             | 9220175501 |      17 | csbs      | 7497674 | it professor |    901 | 1971-06-28 |
+|      2 | Uthkarsh Bajwa      | 301
+Chauhan Chowk, Buxar 078715                  | 2178336902 |      14 | csbs      | 2559870 | clerk        |    999 | 1991-10-31 |
+|     21 | Amira Viswanathan   | H.No. 699, Badal
+Phagwara-520144                 | 7993860047 |       9 | csbs      | 9583819 | analyst      |   1009 | 1995-07-09 |
+|     40 | Anay Sharma         | 00/957
+Yadav Circle
+Sonipat 396722               | 7881050758 |      19 | csbs      | 9099392 | manager      |   1043 | 2002-02-03 |
+|     78 | Vanya Gade          | 811, Sami Marg, Durgapur-107016                  | 1672705916 |      15 | csbs      | 6630308 | clerk        |   1093 | 2022-11-16 |
+|     88 | Hazel Gade          | 07, Gupta Chowk
+Jhansi 454973                    | 7735220089 |       4 | csbs      | 3476686 | analyst      |   1115 | 2029-10-17 |
+|     13 | Amira Dyal          | H.No. 95
+Loke Nagar, Bidar-581206                | 7330549584 |      19 | csbs      | 5629468 | it professor |   1125 | 2016-05-29 |
+|     26 | Ishita Wadhwa       | H.No. 68, Chawla Chowk
+Yamunanagar 429284        | 7530873785 |       0 | csbs      | 2717233 | clerk        |   1159 | 1971-09-24 |
+|     14 | Lakshit Khanna      | 870
+Comar Path
+Kadapa 204034                     | 2483282115 |       5 | csbs      | 8745307 | it professor |   1169 | 1991-10-25 |
+|     59 | Nakul Chaudhari     | 454, Garg Circle
+Gudivada 376764                 | 8566990354 |      23 | csbs      | 4292826 | president    |   1174 | 2020-04-09 |
+|     46 | Jivika Bhasin       | 15/426
+Gandhi Street
+Kolhapur 724252             | 9496663807 |       4 | csbs      | 3652578 | president    |   1296 | 1979-03-26 |
+|     65 | Jayan Ratti         | 31/44
+Seshadri Nagar
+Bhopal-701746               | 9861012048 |      30 | csbs      | 9635582 | analyst      |   1385 | 2026-07-01 |
+|     56 | Darshit Dash        | H.No. 42
+Ramesh Circle
+Belgaum 076436            | 7404186141 |      20 | csbs      | 1402340 | manager      |   1407 | 2004-08-31 |
+|     39 | Mishti Dave         | 30/57
+Rama Road, Eluru-064572                    | 6296438816 |       2 | csbs      | 2110571 | analyst      |   1629 | 2030-07-23 |
+|      7 | Urvi Garg           | 520, Rajagopalan Ganj
+Saharanpur 905111          | 9317251913 |      18 | csbs      | 6271176 | clerk        |   1714 | 2017-03-12 |
+|     47 | Khushi Rajagopalan  | H.No. 847
+Deol Zila, Dibrugarh-872922            | 2399190271 |       9 | csbs      | 4214844 | manager      |   1940 | 1974-09-01 |
+|     42 | Reyansh Jha         | 617, Konda Zila, Malda-862346                    | 2376783260 |      20 | csbs      | 9730999 | clerk        |   2225 | 2026-03-17 |
+|     48 | Eshani Kar          | 87/17, Raj Chowk, Visakhapatnam-404779           | 8544586123 |       7 | csbs      | 6552946 | mgr          |   2231 | 1997-06-09 |
+|      8 | Ira Balakrishnan    | H.No. 766
+Sharma Marg, Ramgarh-061306            | 7860319225 |       1 | csbs      | 1984910 | it professor |   2307 | 2031-01-23 |
+|      6 | Krish Dubey         | 823, Kalita Ganj, Ghaziabad 691660               | 8104920856 |       6 | csbs      | 3379415 | president    |   2438 | 2023-01-03 |
+|     69 | Elakshi Chakrabarti | 18/850, Brahmbhatt Ganj
+Imphal-902807            | 4163489435 |      18 | csbs      | 7212661 | manager      |   2447 | 1974-12-08 |
+|     64 | Aradhya Iyengar     | 399
+Lanka Street
+Tenali-196768                   | 3379561760 |      13 | csbs      | 4727226 | it professor |   2593 | 2000-12-23 |
+|     53 | Mehul Gala          | H.No. 473, Lad Chowk
+Tiruppur-662052             | 3293328686 |       7 | csbs      | 6365742 | analyst      |   2646 | 2023-04-06 |
+|     97 | Taimur Walla        | H.No. 677, Suresh Street, Darbhanga-853621       | 4768417086 |       9 | csbs      | 7917828 | it professor |   2704 | 1978-05-03 |
+|     72 | Aayush Swamy        | 36/896, Date Street, Vasai-Virar-650849          | 2721634761 |       8 | csbs      | 3671933 | analyst      |   2824 | 2025-09-07 |
+|     43 | Sumer Bera          | H.No. 45, Raval Circle
+Ballia-443749             | 6675536480 |      20 | csbs      | 4324216 | manager      |   2830 | 2005-08-27 |
+|     81 | Heer Borra          | H.No. 557, Magar Zila, Arrah 967763              | 5929267306 |      14 | csbs      | 1812267 | it professor |   2845 | 1981-05-05 |
+|     10 | Gatik Sant          | 27/347
+Buch Road
+Malegaon-481030                 | 6033941038 |      23 | csbs      | 6918132 | president    |   2896 | 2028-07-24 |
+|      5 | Aradhya Kunda       | 15/28, Deshpande Ganj
+Jamnagar 273132            | 2442989356 |       2 | csbs      | 3632302 | analyst      |   2937 | 2019-09-16 |
+|     62 | Devansh Kamdar      | H.No. 507, Iyer Nagar
+Rourkela-873730            | 4978310750 |      14 | csbs      | 2781355 | president    |   3010 | 2008-05-07 |
+|     22 | Veer Balakrishnan   | 20/266, Taneja Ganj, Moradabad 740651            | 9500869701 |       6 | csbs      | 3694437 | analyst      |   3012 | 2025-04-16 |
+|     74 | Gokul Bhat          | H.No. 75, Kumer Circle
+Raipur-221883             | 6015575900 |      11 | csbs      | 3615717 | president    |   3066 | 2023-07-22 |
+|     30 | Kabir Tata          | 65/99
+Dora Ganj
+Karawal Nagar-566105             | 3287225267 |       5 | csbs      | 5459520 | mgr          |   3203 | 2009-01-05 |
+|      4 | Miraan Chatterjee   | 031, Shenoy Nagar, Haldia-873862                 | 1530508794 |      26 | csbs      | 6855207 | analyst      |   3318 | 1996-06-16 |
+|     41 | Emir Raval          | 81
+Madan Road, Rampur 311805                     | 4695561831 |      18 | csbs      | 7357676 | it professor |   3328 | 1979-01-04 |
+|     76 | Shanaya Dass        | 10/22, Kaur Road, Panihati-526309                | 2013394588 |      21 | csbs      | 9769974 | analyst      |   3593 | 1980-10-11 |
+|     23 | Dhanush Goda        | H.No. 014
+Gade Street
+Anand 001347               | 3866469843 |       6 | csbs      | 4054802 | it professor |   3643 | 2031-03-21 |
+|     95 | Yuvraj  Kamdar      | 97/639
+Sankar Path, Nangloi Jat 170216           | 7093624465 |       0 | csbs      | 4841150 | mgr          |   3719 | 2009-03-29 |
+|     92 | Stuvan Ray          | H.No. 725, Shere Zila
+Yamunanagar 972842         | 6034500905 |      14 | csbs      | 7738889 | mgr          |   3766 | 1974-11-09 |
+|     58 | Aaryahi Chaudhari   | 31/773
+Kulkarni Path
+Haridwar 350253             | 5853149146 |      21 | csbs      | 7391267 | president    |   3847 | 1990-07-09 |
+|    100 | Saira Saraf         | 134
+Goyal Road, Nizamabad-068697                 | 1746737413 |      19 | csbs      | 2434484 | mgr          |   3873 | 2017-02-06 |
+|     12 | Jayan Bahl          | 26/63
+Vaidya Road
+Jodhpur-597207                 | 9122338631 |      17 | csbs      | 6614679 | analyst      |   4101 | 1998-01-24 |
+|     18 | Shayak Mahal        | 90, Gaba
+Eluru-483402                            | 4978098115 |      19 | csbs      | 3011136 | president    |   4235 | 1992-10-19 |
+|     34 | Pihu Sule           | 387, Chandra
+Karaikudi 639219                    | 6989278861 |      10 | csbs      | 6475035 | manager      |   4275 | 2027-08-01 |
+|     71 | Reyansh Dada        | H.No. 558
+Majumdar
+Shahjahanpur-374295           | 4510034191 |       9 | csbs      | 6290693 | president    |   4457 | 2007-05-05 |
+|     60 | Aaina Bose          | H.No. 144, Gola, Chinsurah 774757                | 1742890922 |       0 | csbs      | 4445898 | clerk        |   4525 | 2016-10-25 |
+|     63 | Shamik Mane         | 91/335
+Ray Chowk, Noida 315638                   | 6203375531 |       5 | csbs      | 4150982 | clerk        |   4554 | 2030-08-01 |
+|     70 | Purab Venkatesh     | H.No. 60, Khurana, Unnao 836823                  | 7256403957 |      10 | csbs      | 8237480 | mgr          |   4617 | 2018-02-11 |
+|     17 | Abram Ravi          | 68/857, Gola Marg, Mangalore-437483              | 8776917926 |      29 | csbs      | 4822499 | mgr          |   4649 | 1970-09-04 |
+|     33 | Ranbir Dalal        | 30/064, Krishna Street, Mirzapur-353912          | 6818724194 |       1 | csbs      | 3328789 | clerk        |   4665 | 1980-09-29 |
+|     11 | Nakul Johal         | 33
+Saraf Street, Baranagar-691562                | 5924544280 |      18 | csbs      | 8364043 | mgr          |   4668 | 1994-06-19 |
+|     66 | Fateh Thakkar       | 71, Varkey Circle
+Aligarh 707050                 | 2581464737 |      20 | csbs      | 3615125 | mgr          |   4708 | 1987-08-05 |
+|     16 | Sana Bobal          | 96/276
+Dora Zila, Gangtok 261606                 | 3911844914 |       3 | csbs      | 5663903 | clerk        |   4759 | 1972-08-03 |
+|     98 | Miraya Handa        | 11/383, Bava Road
+Erode-499430                   | 6796353867 |      30 | csbs      | 4163880 | manager      |   4901 | 2003-11-26 |
+|     84 | Advika Chopra       | H.No. 061
+Garg, Udupi 005644                     | 1637473345 |      20 | csbs      | 6644682 | president    |   4912 | 1979-01-22 |
+|     91 | Kismat Warrior      | 18/230, Kapoor Road, Visakhapatnam-639083        | 2997089052 |      19 | csbs      | 7579467 | president    |   4917 | 2018-11-15 |
+|     75 | Anahita Suri        | H.No. 24
+Chad Street
+Mahbubnagar-663383          | 9987951629 |       3 | csbs      | 6601868 | clerk        |   5277 | 1992-07-17 |
+|     15 | Anay Korpal         | H.No. 53
+Kota Zila
+Aurangabad-000764             | 9907156401 |       3 | csbs      | 1308736 | mgr          |   5291 | 1995-08-16 |
+|      3 | Ranbir Walia        | H.No. 46
+Goswami Ganj
+Tumkur-674366              | 8043286987 |       8 | csbs      | 7555122 | analyst      |   5526 | 2024-11-19 |
+|     50 | Advik Kalla         | H.No. 462
+Kale Marg
+Bhopal-654347                | 8452801783 |      14 | csbs      | 2803997 | manager      |   5650 | 1996-04-29 |
+|     89 | Myra Sankaran       | 88/376
+Barad Street
+Ajmer-023474                 | 3290848861 |      12 | csbs      | 5454645 | clerk        |   5696 | 1990-02-28 |
+|     45 | Arhaan Ratti        | 459, Tara Road, Allahabad 646630                 | 3003224583 |      11 | csbs      | 2300841 | manager      |   5753 | 1999-04-13 |
+|     99 | Ahana  Bawa         | H.No. 23, Gole Ganj, Hyderabad 022843            | 8007677764 |      20 | csbs      | 2193235 | analyst      |   5959 | 2018-06-15 |
+|     57 | Heer Krishnan       | 10/332, Garg Marg, Aurangabad 849955             | 5278142094 |      22 | csbs      | 1721538 | mgr          |   5967 | 1991-03-06 |
+|     54 | Hiran Vohra         | 89/758
+Master, Karaikudi 678013                  | 8787525125 |      18 | csbs      | 4375604 | it professor |   6165 | 2015-02-23 |
+|     27 | Vihaan Gour         | 81
+Desai Nagar
+Nandyal 014155                    | 7605526092 |      16 | csbs      | 5627962 | president    |   6518 | 2030-06-11 |
+|     20 | Yasmin Kothari      | 55/11, Rajagopalan
+Rajahmundry-415643            | 7812180617 |      24 | csbs      | 6632373 | analyst      |   6630 | 1971-01-15 |
+|     51 | Yasmin Mahal        | H.No. 469, Wable Street
+Sultan Pur Majra 562401  | 9409021920 |      29 | csbs      | 1760584 | mgr          |   6709 | 1974-03-05 |
+|     93 | Nayantara Deshpande | 62/189, Gupta Zila
+Jamnagar-884728               | 1242810178 |       7 | csbs      | 2256081 | president    |   6750 | 2022-12-03 |
+|     49 | Lavanya Ganesan     | 06/83
+Ghose Zila, Berhampur 884595               | 1963715667 |      11 | csbs      | 2834082 | analyst      |   6873 | 1993-10-15 |
+|     85 | Shray Bera          | H.No. 856
+Shere Street
+Dewas 308216              | 7523482204 |      23 | csbs      | 5004838 | analyst      |   6998 | 1994-01-25 |
+|     32 | Shray Badal         | H.No. 69, Chopra Marg, Morbi-794764              | 1229059741 |      11 | csbs      | 4870957 | it professor |   7083 | 2021-08-07 |
+|     36 | Yakshit Rastogi     | 88, Sethi, Sri Ganganagar 323340                 | 3691091324 |      25 | csbs      | 7035871 | clerk        |   7265 | 2014-12-02 |
+|     73 | Rati Bir            | 92
+Chandra Zila
+Malda-428295                     | 7779026763 |      18 | csbs      | 1441822 | it professor |   7519 | 2004-11-20 |
+|     79 | Aaina Bassi         | 058
+Dugal Zila, Proddatur-638950                 | 6604178230 |       2 | csbs      | 1501507 | it professor |   7660 | 1976-01-15 |
+|     28 | Neelofar Iyer       | H.No. 232
+Thaker Nagar
+Bidhannagar-050087        | 6327063125 |      15 | csbs      | 9573588 | it professor |   7720 | 2011-01-14 |
+|     25 | Tiya Gour           | 192, Chhabra Path, Gaya 305638                   | 7224478579 |       0 | csbs      | 5683970 | clerk        |   7764 | 1973-12-20 |
+|     61 | Mohanlal Chhabra    | 221
+Babu Zila, Gorakhpur-288653                  | 1691487460 |      16 | csbs      | 2279199 | manager      |   7775 | 2032-08-19 |
+|     19 | Zoya Sekhon         | 32/839, Som Zila, Kochi 936652                   | 7322883191 |      15 | csbs      | 3240998 | mgr          |   7888 | 2015-04-23 |
+|     35 | Biju Vasa           | 04/19
+Apte Circle, Aurangabad-504786             | 7000798044 |       4 | csbs      | 8766721 | manager      |   7967 | 2025-10-05 |
+|     37 | Anahita Rau         | 23/198, Bhakta Street
+Kalyan-Dombivli 421981     | 2925591645 |      30 | csbs      | 7509930 | president    |   8014 | 1995-06-23 |
+|     55 | Mahika Bose         | 412, Sandal Chowk
+Kota-747762                    | 3628939059 |       5 | csbs      | 5838881 | manager      |   8018 | 1975-03-06 |
+|     82 | Azad Chopra         | H.No. 28, Sharma
+Jabalpur-846397                 | 9435261046 |       4 | csbs      | 8394079 | analyst      |   8159 | 2027-07-05 |
+|     87 | Ira Mandal          | H.No. 03, Rajagopalan Circle, Gandhinagar 954072 | 5615382593 |      14 | csbs      | 8236790 | analyst      |   8360 | 1997-07-14 |
+|      9 | Suhana Varkey       | 54/434, Sur Zila
+Eluru 998917                    | 4042645117 |      18 | csbs      | 6926617 | mgr          |   8375 | 1973-10-02 |
+|     24 | Aarush Bhargava     | H.No. 90
+Garg, Munger 488150                     | 7886271353 |       9 | csbs      | 6018261 | manager      |   8539 | 1992-12-12 |
+|     83 | Fateh Shroff        | 556
+Shroff Circle
+Ujjain 724521                  | 7910538298 |       5 | csbs      | 6953251 | analyst      |   8780 | 2003-11-26 |
+|     90 | Indrans Gill        | H.No. 19
+Agate Zila, Sri Ganganagar 467465       | 1616774578 |      19 | csbs      | 6234961 | clerk        |   9332 | 1980-08-01 |
+|     86 | Damini Dubey        | H.No. 11, Kashyap Ganj, Sambhal-617079           | 8400250595 |      30 | csbs      | 4204452 | clerk        |   9376 | 2024-11-29 |
+|     31 | Jivin Bakshi        | H.No. 531
+Bajaj, Meerut-603829                   | 1095266715 |      11 | csbs      | 4515965 | president    |   9492 | 1980-10-02 |
+|     52 | Jhanvi Golla        | H.No. 056
+Chakrabarti Street, Tirunelveli 107607 | 1613738399 |      10 | csbs      | 3480031 | mgr          |   9507 | 2007-11-04 |
+|     44 | Kashvi Kapoor       | H.No. 25, Kapur Path, Guna 756000                | 4622767577 |       5 | csbs      | 8518419 | clerk        |   9535 | 1983-08-18 |
+|     96 | Tushar Raval        | H.No. 932
+Kapadia Chowk, Dibrugarh 966089        | 7608375120 |      29 | csbs      | 4046532 | it professor |   9684 | 2026-08-18 |
+|     67 | Stuvan Chaudhary    | 736, Bahl Road, Jodhpur-822953                   | 4208800902 |      10 | csbs      | 9180836 | mgr          |   9790 | 2029-12-11 |
+|     94 | Shamik Saraf        | 39/91, Kibe Street, Belgaum-684445               | 4152444352 |      26 | csbs      | 2808295 | manager      |   9806 | 2015-03-03 |
+|     77 | Zain Srinivasan     | 46/661, Dada Path
+Thanjavur-690072               | 8049691823 |       4 | csbs      | 1418918 | manager      |   9920 | 1989-07-24 |
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+100 rows in set (0.001 sec)
+
+MariaDB [iem]> exit;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 18
+Server version: 11.4.2-MariaDB Arch Linux
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Reading history-file /home/cab1729/.local/state/mariadb/history
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [iem]> source code/3.sql;
+--------------
+create table if not exists employee(
+	emp_no int,
+	e_name varchar(32),
+	e_address text,
+	e_phone_no bigint,
+	dept_no int,
+	dept_name varchar(4),
+	job_id int,
+	designation varchar(15),
+	salary float,
+	hiredate date
+)
+--------------
+
+Query OK, 0 rows affected, 1 warning (0.002 sec)
+
+--------------
+select * from employee where designation='manager'
+--------------
+
++--------+---------------------+---------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+| emp_no | e_name              | e_address                             | e_phone_no | dept_no | dept_name | job_id  | designation | salary | hiredate   |
++--------+---------------------+---------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+|     24 | Aarush Bhargava     | H.No. 90
+Garg, Munger 488150          | 7886271353 |       9 | csbs      | 6018261 | manager     |   8539 | 1992-12-12 |
+|     29 | Kavya Swaminathan   | 97/58
+Cheema
+Ambarnath 046918         | 8544572080 |      23 | csbs      | 4319399 | manager     |    244 | 2012-11-07 |
+|     34 | Pihu Sule           | 387, Chandra
+Karaikudi 639219         | 6989278861 |      10 | csbs      | 6475035 | manager     |   4275 | 2027-08-01 |
+|     35 | Biju Vasa           | 04/19
+Apte Circle, Aurangabad-504786  | 7000798044 |       4 | csbs      | 8766721 | manager     |   7967 | 2025-10-05 |
+|     40 | Anay Sharma         | 00/957
+Yadav Circle
+Sonipat 396722    | 7881050758 |      19 | csbs      | 9099392 | manager     |   1043 | 2002-02-03 |
+|     43 | Sumer Bera          | H.No. 45, Raval Circle
+Ballia-443749  | 6675536480 |      20 | csbs      | 4324216 | manager     |   2830 | 2005-08-27 |
+|     45 | Arhaan Ratti        | 459, Tara Road, Allahabad 646630      | 3003224583 |      11 | csbs      | 2300841 | manager     |   5753 | 1999-04-13 |
+|     47 | Khushi Rajagopalan  | H.No. 847
+Deol Zila, Dibrugarh-872922 | 2399190271 |       9 | csbs      | 4214844 | manager     |   1940 | 1974-09-01 |
+|     50 | Advik Kalla         | H.No. 462
+Kale Marg
+Bhopal-654347     | 8452801783 |      14 | csbs      | 2803997 | manager     |   5650 | 1996-04-29 |
+|     55 | Mahika Bose         | 412, Sandal Chowk
+Kota-747762         | 3628939059 |       5 | csbs      | 5838881 | manager     |   8018 | 1975-03-06 |
+|     56 | Darshit Dash        | H.No. 42
+Ramesh Circle
+Belgaum 076436 | 7404186141 |      20 | csbs      | 1402340 | manager     |   1407 | 2004-08-31 |
+|     61 | Mohanlal Chhabra    | 221
+Babu Zila, Gorakhpur-288653       | 1691487460 |      16 | csbs      | 2279199 | manager     |   7775 | 2032-08-19 |
+|     69 | Elakshi Chakrabarti | 18/850, Brahmbhatt Ganj
+Imphal-902807 | 4163489435 |      18 | csbs      | 7212661 | manager     |   2447 | 1974-12-08 |
+|     77 | Zain Srinivasan     | 46/661, Dada Path
+Thanjavur-690072    | 8049691823 |       4 | csbs      | 1418918 | manager     |   9920 | 1989-07-24 |
+|     94 | Shamik Saraf        | 39/91, Kibe Street, Belgaum-684445    | 4152444352 |      26 | csbs      | 2808295 | manager     |   9806 | 2015-03-03 |
+|     98 | Miraya Handa        | 11/383, Bava Road
+Erode-499430        | 6796353867 |      30 | csbs      | 4163880 | manager     |   4901 | 2003-11-26 |
++--------+---------------------+---------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+16 rows in set (0.002 sec)
+
+--------------
+select * from employee where salary>(select max(salary) from employee where designation="it professor")
+--------------
+
++--------+------------------+------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+| emp_no | e_name           | e_address                          | e_phone_no | dept_no | dept_name | job_id  | designation | salary | hiredate   |
++--------+------------------+------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+|     67 | Stuvan Chaudhary | 736, Bahl Road, Jodhpur-822953     | 4208800902 |      10 | csbs      | 9180836 | mgr         |   9790 | 2029-12-11 |
+|     77 | Zain Srinivasan  | 46/661, Dada Path
+Thanjavur-690072 | 8049691823 |       4 | csbs      | 1418918 | manager     |   9920 | 1989-07-24 |
+|     94 | Shamik Saraf     | 39/91, Kibe Street, Belgaum-684445 | 4152444352 |      26 | csbs      | 2808295 | manager     |   9806 | 2015-03-03 |
++--------+------------------+------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+3 rows in set (0.002 sec)
+
+--------------
+select * from employee where hiredate>'1980-12-31'
+--------------
+
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+| emp_no | e_name              | e_address                                        | e_phone_no | dept_no | dept_name | job_id  | designation  | salary | hiredate   |
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+|      2 | Uthkarsh Bajwa      | 301
+Chauhan Chowk, Buxar 078715                  | 2178336902 |      14 | csbs      | 2559870 | clerk        |    999 | 1991-10-31 |
+|      3 | Ranbir Walia        | H.No. 46
+Goswami Ganj
+Tumkur-674366              | 8043286987 |       8 | csbs      | 7555122 | analyst      |   5526 | 2024-11-19 |
+|      4 | Miraan Chatterjee   | 031, Shenoy Nagar, Haldia-873862                 | 1530508794 |      26 | csbs      | 6855207 | analyst      |   3318 | 1996-06-16 |
+|      5 | Aradhya Kunda       | 15/28, Deshpande Ganj
+Jamnagar 273132            | 2442989356 |       2 | csbs      | 3632302 | analyst      |   2937 | 2019-09-16 |
+|      6 | Krish Dubey         | 823, Kalita Ganj, Ghaziabad 691660               | 8104920856 |       6 | csbs      | 3379415 | president    |   2438 | 2023-01-03 |
+|      7 | Urvi Garg           | 520, Rajagopalan Ganj
+Saharanpur 905111          | 9317251913 |      18 | csbs      | 6271176 | clerk        |   1714 | 2017-03-12 |
+|      8 | Ira Balakrishnan    | H.No. 766
+Sharma Marg, Ramgarh-061306            | 7860319225 |       1 | csbs      | 1984910 | it professor |   2307 | 2031-01-23 |
+|     10 | Gatik Sant          | 27/347
+Buch Road
+Malegaon-481030                 | 6033941038 |      23 | csbs      | 6918132 | president    |   2896 | 2028-07-24 |
+|     11 | Nakul Johal         | 33
+Saraf Street, Baranagar-691562                | 5924544280 |      18 | csbs      | 8364043 | mgr          |   4668 | 1994-06-19 |
+|     12 | Jayan Bahl          | 26/63
+Vaidya Road
+Jodhpur-597207                 | 9122338631 |      17 | csbs      | 6614679 | analyst      |   4101 | 1998-01-24 |
+|     13 | Amira Dyal          | H.No. 95
+Loke Nagar, Bidar-581206                | 7330549584 |      19 | csbs      | 5629468 | it professor |   1125 | 2016-05-29 |
+|     14 | Lakshit Khanna      | 870
+Comar Path
+Kadapa 204034                     | 2483282115 |       5 | csbs      | 8745307 | it professor |   1169 | 1991-10-25 |
+|     15 | Anay Korpal         | H.No. 53
+Kota Zila
+Aurangabad-000764             | 9907156401 |       3 | csbs      | 1308736 | mgr          |   5291 | 1995-08-16 |
+|     18 | Shayak Mahal        | 90, Gaba
+Eluru-483402                            | 4978098115 |      19 | csbs      | 3011136 | president    |   4235 | 1992-10-19 |
+|     19 | Zoya Sekhon         | 32/839, Som Zila, Kochi 936652                   | 7322883191 |      15 | csbs      | 3240998 | mgr          |   7888 | 2015-04-23 |
+|     21 | Amira Viswanathan   | H.No. 699, Badal
+Phagwara-520144                 | 7993860047 |       9 | csbs      | 9583819 | analyst      |   1009 | 1995-07-09 |
+|     22 | Veer Balakrishnan   | 20/266, Taneja Ganj, Moradabad 740651            | 9500869701 |       6 | csbs      | 3694437 | analyst      |   3012 | 2025-04-16 |
+|     23 | Dhanush Goda        | H.No. 014
+Gade Street
+Anand 001347               | 3866469843 |       6 | csbs      | 4054802 | it professor |   3643 | 2031-03-21 |
+|     24 | Aarush Bhargava     | H.No. 90
+Garg, Munger 488150                     | 7886271353 |       9 | csbs      | 6018261 | manager      |   8539 | 1992-12-12 |
+|     27 | Vihaan Gour         | 81
+Desai Nagar
+Nandyal 014155                    | 7605526092 |      16 | csbs      | 5627962 | president    |   6518 | 2030-06-11 |
+|     28 | Neelofar Iyer       | H.No. 232
+Thaker Nagar
+Bidhannagar-050087        | 6327063125 |      15 | csbs      | 9573588 | it professor |   7720 | 2011-01-14 |
+|     29 | Kavya Swaminathan   | 97/58
+Cheema
+Ambarnath 046918                    | 8544572080 |      23 | csbs      | 4319399 | manager      |    244 | 2012-11-07 |
+|     30 | Kabir Tata          | 65/99
+Dora Ganj
+Karawal Nagar-566105             | 3287225267 |       5 | csbs      | 5459520 | mgr          |   3203 | 2009-01-05 |
+|     32 | Shray Badal         | H.No. 69, Chopra Marg, Morbi-794764              | 1229059741 |      11 | csbs      | 4870957 | it professor |   7083 | 2021-08-07 |
+|     34 | Pihu Sule           | 387, Chandra
+Karaikudi 639219                    | 6989278861 |      10 | csbs      | 6475035 | manager      |   4275 | 2027-08-01 |
+|     35 | Biju Vasa           | 04/19
+Apte Circle, Aurangabad-504786             | 7000798044 |       4 | csbs      | 8766721 | manager      |   7967 | 2025-10-05 |
+|     36 | Yakshit Rastogi     | 88, Sethi, Sri Ganganagar 323340                 | 3691091324 |      25 | csbs      | 7035871 | clerk        |   7265 | 2014-12-02 |
+|     37 | Anahita Rau         | 23/198, Bhakta Street
+Kalyan-Dombivli 421981     | 2925591645 |      30 | csbs      | 7509930 | president    |   8014 | 1995-06-23 |
+|     38 | Saira Bajwa         | 462
+Arora Path, Hosur-114429                     | 1147638554 |      21 | csbs      | 1252608 | clerk        |    661 | 1986-01-20 |
+|     39 | Mishti Dave         | 30/57
+Rama Road, Eluru-064572                    | 6296438816 |       2 | csbs      | 2110571 | analyst      |   1629 | 2030-07-23 |
+|     40 | Anay Sharma         | 00/957
+Yadav Circle
+Sonipat 396722               | 7881050758 |      19 | csbs      | 9099392 | manager      |   1043 | 2002-02-03 |
+|     42 | Reyansh Jha         | 617, Konda Zila, Malda-862346                    | 2376783260 |      20 | csbs      | 9730999 | clerk        |   2225 | 2026-03-17 |
+|     43 | Sumer Bera          | H.No. 45, Raval Circle
+Ballia-443749             | 6675536480 |      20 | csbs      | 4324216 | manager      |   2830 | 2005-08-27 |
+|     44 | Kashvi Kapoor       | H.No. 25, Kapur Path, Guna 756000                | 4622767577 |       5 | csbs      | 8518419 | clerk        |   9535 | 1983-08-18 |
+|     45 | Arhaan Ratti        | 459, Tara Road, Allahabad 646630                 | 3003224583 |      11 | csbs      | 2300841 | manager      |   5753 | 1999-04-13 |
+|     48 | Eshani Kar          | 87/17, Raj Chowk, Visakhapatnam-404779           | 8544586123 |       7 | csbs      | 6552946 | mgr          |   2231 | 1997-06-09 |
+|     49 | Lavanya Ganesan     | 06/83
+Ghose Zila, Berhampur 884595               | 1963715667 |      11 | csbs      | 2834082 | analyst      |   6873 | 1993-10-15 |
+|     50 | Advik Kalla         | H.No. 462
+Kale Marg
+Bhopal-654347                | 8452801783 |      14 | csbs      | 2803997 | manager      |   5650 | 1996-04-29 |
+|     52 | Jhanvi Golla        | H.No. 056
+Chakrabarti Street, Tirunelveli 107607 | 1613738399 |      10 | csbs      | 3480031 | mgr          |   9507 | 2007-11-04 |
+|     53 | Mehul Gala          | H.No. 473, Lad Chowk
+Tiruppur-662052             | 3293328686 |       7 | csbs      | 6365742 | analyst      |   2646 | 2023-04-06 |
+|     54 | Hiran Vohra         | 89/758
+Master, Karaikudi 678013                  | 8787525125 |      18 | csbs      | 4375604 | it professor |   6165 | 2015-02-23 |
+|     56 | Darshit Dash        | H.No. 42
+Ramesh Circle
+Belgaum 076436            | 7404186141 |      20 | csbs      | 1402340 | manager      |   1407 | 2004-08-31 |
+|     57 | Heer Krishnan       | 10/332, Garg Marg, Aurangabad 849955             | 5278142094 |      22 | csbs      | 1721538 | mgr          |   5967 | 1991-03-06 |
+|     58 | Aaryahi Chaudhari   | 31/773
+Kulkarni Path
+Haridwar 350253             | 5853149146 |      21 | csbs      | 7391267 | president    |   3847 | 1990-07-09 |
+|     59 | Nakul Chaudhari     | 454, Garg Circle
+Gudivada 376764                 | 8566990354 |      23 | csbs      | 4292826 | president    |   1174 | 2020-04-09 |
+|     60 | Aaina Bose          | H.No. 144, Gola, Chinsurah 774757                | 1742890922 |       0 | csbs      | 4445898 | clerk        |   4525 | 2016-10-25 |
+|     61 | Mohanlal Chhabra    | 221
+Babu Zila, Gorakhpur-288653                  | 1691487460 |      16 | csbs      | 2279199 | manager      |   7775 | 2032-08-19 |
+|     62 | Devansh Kamdar      | H.No. 507, Iyer Nagar
+Rourkela-873730            | 4978310750 |      14 | csbs      | 2781355 | president    |   3010 | 2008-05-07 |
+|     63 | Shamik Mane         | 91/335
+Ray Chowk, Noida 315638                   | 6203375531 |       5 | csbs      | 4150982 | clerk        |   4554 | 2030-08-01 |
+|     64 | Aradhya Iyengar     | 399
+Lanka Street
+Tenali-196768                   | 3379561760 |      13 | csbs      | 4727226 | it professor |   2593 | 2000-12-23 |
+|     65 | Jayan Ratti         | 31/44
+Seshadri Nagar
+Bhopal-701746               | 9861012048 |      30 | csbs      | 9635582 | analyst      |   1385 | 2026-07-01 |
+|     66 | Fateh Thakkar       | 71, Varkey Circle
+Aligarh 707050                 | 2581464737 |      20 | csbs      | 3615125 | mgr          |   4708 | 1987-08-05 |
+|     67 | Stuvan Chaudhary    | 736, Bahl Road, Jodhpur-822953                   | 4208800902 |      10 | csbs      | 9180836 | mgr          |   9790 | 2029-12-11 |
+|     68 | Diya Bajwa          | 68
+Khare Road, Yamunanagar-301158                | 4520269444 |      19 | csbs      | 6959540 | president    |    155 | 1993-01-05 |
+|     70 | Purab Venkatesh     | H.No. 60, Khurana, Unnao 836823                  | 7256403957 |      10 | csbs      | 8237480 | mgr          |   4617 | 2018-02-11 |
+|     71 | Reyansh Dada        | H.No. 558
+Majumdar
+Shahjahanpur-374295           | 4510034191 |       9 | csbs      | 6290693 | president    |   4457 | 2007-05-05 |
+|     72 | Aayush Swamy        | 36/896, Date Street, Vasai-Virar-650849          | 2721634761 |       8 | csbs      | 3671933 | analyst      |   2824 | 2025-09-07 |
+|     73 | Rati Bir            | 92
+Chandra Zila
+Malda-428295                     | 7779026763 |      18 | csbs      | 1441822 | it professor |   7519 | 2004-11-20 |
+|     74 | Gokul Bhat          | H.No. 75, Kumer Circle
+Raipur-221883             | 6015575900 |      11 | csbs      | 3615717 | president    |   3066 | 2023-07-22 |
+|     75 | Anahita Suri        | H.No. 24
+Chad Street
+Mahbubnagar-663383          | 9987951629 |       3 | csbs      | 6601868 | clerk        |   5277 | 1992-07-17 |
+|     77 | Zain Srinivasan     | 46/661, Dada Path
+Thanjavur-690072               | 8049691823 |       4 | csbs      | 1418918 | manager      |   9920 | 1989-07-24 |
+|     78 | Vanya Gade          | 811, Sami Marg, Durgapur-107016                  | 1672705916 |      15 | csbs      | 6630308 | clerk        |   1093 | 2022-11-16 |
+|     80 | Kaira Sarraf        | 82/150, Kala Marg
+Bahraich 541163                | 2847523000 |      25 | csbs      | 3176297 | mgr          |    356 | 2013-06-18 |
+|     81 | Heer Borra          | H.No. 557, Magar Zila, Arrah 967763              | 5929267306 |      14 | csbs      | 1812267 | it professor |   2845 | 1981-05-05 |
+|     82 | Azad Chopra         | H.No. 28, Sharma
+Jabalpur-846397                 | 9435261046 |       4 | csbs      | 8394079 | analyst      |   8159 | 2027-07-05 |
+|     83 | Fateh Shroff        | 556
+Shroff Circle
+Ujjain 724521                  | 7910538298 |       5 | csbs      | 6953251 | analyst      |   8780 | 2003-11-26 |
+|     85 | Shray Bera          | H.No. 856
+Shere Street
+Dewas 308216              | 7523482204 |      23 | csbs      | 5004838 | analyst      |   6998 | 1994-01-25 |
+|     86 | Damini Dubey        | H.No. 11, Kashyap Ganj, Sambhal-617079           | 8400250595 |      30 | csbs      | 4204452 | clerk        |   9376 | 2024-11-29 |
+|     87 | Ira Mandal          | H.No. 03, Rajagopalan Circle, Gandhinagar 954072 | 5615382593 |      14 | csbs      | 8236790 | analyst      |   8360 | 1997-07-14 |
+|     88 | Hazel Gade          | 07, Gupta Chowk
+Jhansi 454973                    | 7735220089 |       4 | csbs      | 3476686 | analyst      |   1115 | 2029-10-17 |
+|     89 | Myra Sankaran       | 88/376
+Barad Street
+Ajmer-023474                 | 3290848861 |      12 | csbs      | 5454645 | clerk        |   5696 | 1990-02-28 |
+|     91 | Kismat Warrior      | 18/230, Kapoor Road, Visakhapatnam-639083        | 2997089052 |      19 | csbs      | 7579467 | president    |   4917 | 2018-11-15 |
+|     93 | Nayantara Deshpande | 62/189, Gupta Zila
+Jamnagar-884728               | 1242810178 |       7 | csbs      | 2256081 | president    |   6750 | 2022-12-03 |
+|     94 | Shamik Saraf        | 39/91, Kibe Street, Belgaum-684445               | 4152444352 |      26 | csbs      | 2808295 | manager      |   9806 | 2015-03-03 |
+|     95 | Yuvraj  Kamdar      | 97/639
+Sankar Path, Nangloi Jat 170216           | 7093624465 |       0 | csbs      | 4841150 | mgr          |   3719 | 2009-03-29 |
+|     96 | Tushar Raval        | H.No. 932
+Kapadia Chowk, Dibrugarh 966089        | 7608375120 |      29 | csbs      | 4046532 | it professor |   9684 | 2026-08-18 |
+|     98 | Miraya Handa        | 11/383, Bava Road
+Erode-499430                   | 6796353867 |      30 | csbs      | 4163880 | manager      |   4901 | 2003-11-26 |
+|     99 | Ahana  Bawa         | H.No. 23, Gole Ganj, Hyderabad 022843            | 8007677764 |      20 | csbs      | 2193235 | analyst      |   5959 | 2018-06-15 |
+|    100 | Saira Saraf         | 134
+Goyal Road, Nizamabad-068697                 | 1746737413 |      19 | csbs      | 2434484 | mgr          |   3873 | 2017-02-06 |
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+79 rows in set (0.002 sec)
+
+--------------
+select * from employee where designation='clerk' or designation='analyst'
+--------------
+
++--------+-------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+| emp_no | e_name            | e_address                                        | e_phone_no | dept_no | dept_name | job_id  | designation | salary | hiredate   |
++--------+-------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+|      2 | Uthkarsh Bajwa    | 301
+Chauhan Chowk, Buxar 078715                  | 2178336902 |      14 | csbs      | 2559870 | clerk       |    999 | 1991-10-31 |
+|      3 | Ranbir Walia      | H.No. 46
+Goswami Ganj
+Tumkur-674366              | 8043286987 |       8 | csbs      | 7555122 | analyst     |   5526 | 2024-11-19 |
+|      4 | Miraan Chatterjee | 031, Shenoy Nagar, Haldia-873862                 | 1530508794 |      26 | csbs      | 6855207 | analyst     |   3318 | 1996-06-16 |
+|      5 | Aradhya Kunda     | 15/28, Deshpande Ganj
+Jamnagar 273132            | 2442989356 |       2 | csbs      | 3632302 | analyst     |   2937 | 2019-09-16 |
+|      7 | Urvi Garg         | 520, Rajagopalan Ganj
+Saharanpur 905111          | 9317251913 |      18 | csbs      | 6271176 | clerk       |   1714 | 2017-03-12 |
+|     12 | Jayan Bahl        | 26/63
+Vaidya Road
+Jodhpur-597207                 | 9122338631 |      17 | csbs      | 6614679 | analyst     |   4101 | 1998-01-24 |
+|     16 | Sana Bobal        | 96/276
+Dora Zila, Gangtok 261606                 | 3911844914 |       3 | csbs      | 5663903 | clerk       |   4759 | 1972-08-03 |
+|     20 | Yasmin Kothari    | 55/11, Rajagopalan
+Rajahmundry-415643            | 7812180617 |      24 | csbs      | 6632373 | analyst     |   6630 | 1971-01-15 |
+|     21 | Amira Viswanathan | H.No. 699, Badal
+Phagwara-520144                 | 7993860047 |       9 | csbs      | 9583819 | analyst     |   1009 | 1995-07-09 |
+|     22 | Veer Balakrishnan | 20/266, Taneja Ganj, Moradabad 740651            | 9500869701 |       6 | csbs      | 3694437 | analyst     |   3012 | 2025-04-16 |
+|     25 | Tiya Gour         | 192, Chhabra Path, Gaya 305638                   | 7224478579 |       0 | csbs      | 5683970 | clerk       |   7764 | 1973-12-20 |
+|     26 | Ishita Wadhwa     | H.No. 68, Chawla Chowk
+Yamunanagar 429284        | 7530873785 |       0 | csbs      | 2717233 | clerk       |   1159 | 1971-09-24 |
+|     33 | Ranbir Dalal      | 30/064, Krishna Street, Mirzapur-353912          | 6818724194 |       1 | csbs      | 3328789 | clerk       |   4665 | 1980-09-29 |
+|     36 | Yakshit Rastogi   | 88, Sethi, Sri Ganganagar 323340                 | 3691091324 |      25 | csbs      | 7035871 | clerk       |   7265 | 2014-12-02 |
+|     38 | Saira Bajwa       | 462
+Arora Path, Hosur-114429                     | 1147638554 |      21 | csbs      | 1252608 | clerk       |    661 | 1986-01-20 |
+|     39 | Mishti Dave       | 30/57
+Rama Road, Eluru-064572                    | 6296438816 |       2 | csbs      | 2110571 | analyst     |   1629 | 2030-07-23 |
+|     42 | Reyansh Jha       | 617, Konda Zila, Malda-862346                    | 2376783260 |      20 | csbs      | 9730999 | clerk       |   2225 | 2026-03-17 |
+|     44 | Kashvi Kapoor     | H.No. 25, Kapur Path, Guna 756000                | 4622767577 |       5 | csbs      | 8518419 | clerk       |   9535 | 1983-08-18 |
+|     49 | Lavanya Ganesan   | 06/83
+Ghose Zila, Berhampur 884595               | 1963715667 |      11 | csbs      | 2834082 | analyst     |   6873 | 1993-10-15 |
+|     53 | Mehul Gala        | H.No. 473, Lad Chowk
+Tiruppur-662052             | 3293328686 |       7 | csbs      | 6365742 | analyst     |   2646 | 2023-04-06 |
+|     60 | Aaina Bose        | H.No. 144, Gola, Chinsurah 774757                | 1742890922 |       0 | csbs      | 4445898 | clerk       |   4525 | 2016-10-25 |
+|     63 | Shamik Mane       | 91/335
+Ray Chowk, Noida 315638                   | 6203375531 |       5 | csbs      | 4150982 | clerk       |   4554 | 2030-08-01 |
+|     65 | Jayan Ratti       | 31/44
+Seshadri Nagar
+Bhopal-701746               | 9861012048 |      30 | csbs      | 9635582 | analyst     |   1385 | 2026-07-01 |
+|     72 | Aayush Swamy      | 36/896, Date Street, Vasai-Virar-650849          | 2721634761 |       8 | csbs      | 3671933 | analyst     |   2824 | 2025-09-07 |
+|     75 | Anahita Suri      | H.No. 24
+Chad Street
+Mahbubnagar-663383          | 9987951629 |       3 | csbs      | 6601868 | clerk       |   5277 | 1992-07-17 |
+|     76 | Shanaya Dass      | 10/22, Kaur Road, Panihati-526309                | 2013394588 |      21 | csbs      | 9769974 | analyst     |   3593 | 1980-10-11 |
+|     78 | Vanya Gade        | 811, Sami Marg, Durgapur-107016                  | 1672705916 |      15 | csbs      | 6630308 | clerk       |   1093 | 2022-11-16 |
+|     82 | Azad Chopra       | H.No. 28, Sharma
+Jabalpur-846397                 | 9435261046 |       4 | csbs      | 8394079 | analyst     |   8159 | 2027-07-05 |
+|     83 | Fateh Shroff      | 556
+Shroff Circle
+Ujjain 724521                  | 7910538298 |       5 | csbs      | 6953251 | analyst     |   8780 | 2003-11-26 |
+|     85 | Shray Bera        | H.No. 856
+Shere Street
+Dewas 308216              | 7523482204 |      23 | csbs      | 5004838 | analyst     |   6998 | 1994-01-25 |
+|     86 | Damini Dubey      | H.No. 11, Kashyap Ganj, Sambhal-617079           | 8400250595 |      30 | csbs      | 4204452 | clerk       |   9376 | 2024-11-29 |
+|     87 | Ira Mandal        | H.No. 03, Rajagopalan Circle, Gandhinagar 954072 | 5615382593 |      14 | csbs      | 8236790 | analyst     |   8360 | 1997-07-14 |
+|     88 | Hazel Gade        | 07, Gupta Chowk
+Jhansi 454973                    | 7735220089 |       4 | csbs      | 3476686 | analyst     |   1115 | 2029-10-17 |
+|     89 | Myra Sankaran     | 88/376
+Barad Street
+Ajmer-023474                 | 3290848861 |      12 | csbs      | 5454645 | clerk       |   5696 | 1990-02-28 |
+|     90 | Indrans Gill      | H.No. 19
+Agate Zila, Sri Ganganagar 467465       | 1616774578 |      19 | csbs      | 6234961 | clerk       |   9332 | 1980-08-01 |
+|     99 | Ahana  Bawa       | H.No. 23, Gole Ganj, Hyderabad 022843            | 8007677764 |      20 | csbs      | 2193235 | analyst     |   5959 | 2018-06-15 |
++--------+-------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+36 rows in set (0.003 sec)
+
+--------------
+select * from employee where hiredate='1981-04-01' or hiredate='1981-12-03' or hiredate='1981-12-17' or hiredate='1980-01-19'
+--------------
+
+Empty set (0.002 sec)
+
+--------------
+select * from employee where dept_no=10 or dept_no=20
+--------------
+
++--------+------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+| emp_no | e_name           | e_address                                        | e_phone_no | dept_no | dept_name | job_id  | designation | salary | hiredate   |
++--------+------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+|     34 | Pihu Sule        | 387, Chandra
+Karaikudi 639219                    | 6989278861 |      10 | csbs      | 6475035 | manager     |   4275 | 2027-08-01 |
+|     42 | Reyansh Jha      | 617, Konda Zila, Malda-862346                    | 2376783260 |      20 | csbs      | 9730999 | clerk       |   2225 | 2026-03-17 |
+|     43 | Sumer Bera       | H.No. 45, Raval Circle
+Ballia-443749             | 6675536480 |      20 | csbs      | 4324216 | manager     |   2830 | 2005-08-27 |
+|     52 | Jhanvi Golla     | H.No. 056
+Chakrabarti Street, Tirunelveli 107607 | 1613738399 |      10 | csbs      | 3480031 | mgr         |   9507 | 2007-11-04 |
+|     56 | Darshit Dash     | H.No. 42
+Ramesh Circle
+Belgaum 076436            | 7404186141 |      20 | csbs      | 1402340 | manager     |   1407 | 2004-08-31 |
+|     66 | Fateh Thakkar    | 71, Varkey Circle
+Aligarh 707050                 | 2581464737 |      20 | csbs      | 3615125 | mgr         |   4708 | 1987-08-05 |
+|     67 | Stuvan Chaudhary | 736, Bahl Road, Jodhpur-822953                   | 4208800902 |      10 | csbs      | 9180836 | mgr         |   9790 | 2029-12-11 |
+|     70 | Purab Venkatesh  | H.No. 60, Khurana, Unnao 836823                  | 7256403957 |      10 | csbs      | 8237480 | mgr         |   4617 | 2018-02-11 |
+|     84 | Advika Chopra    | H.No. 061
+Garg, Udupi 005644                     | 1637473345 |      20 | csbs      | 6644682 | president   |   4912 | 1979-01-22 |
+|     99 | Ahana  Bawa      | H.No. 23, Gole Ganj, Hyderabad 022843            | 8007677764 |      20 | csbs      | 2193235 | analyst     |   5959 | 2018-06-15 |
++--------+------------------+--------------------------------------------------+------------+---------+-----------+---------+-------------+--------+------------+
+10 rows in set (0.002 sec)
+
+--------------
+select * from employee where (e_name like "S%")
+--------------
+
++--------+------------------+------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+| emp_no | e_name           | e_address                                | e_phone_no | dept_no | dept_name | job_id  | designation  | salary | hiredate   |
++--------+------------------+------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+|      9 | Suhana Varkey    | 54/434, Sur Zila
+Eluru 998917            | 4042645117 |      18 | csbs      | 6926617 | mgr          |   8375 | 1973-10-02 |
+|     16 | Sana Bobal       | 96/276
+Dora Zila, Gangtok 261606         | 3911844914 |       3 | csbs      | 5663903 | clerk        |   4759 | 1972-08-03 |
+|     18 | Shayak Mahal     | 90, Gaba
+Eluru-483402                    | 4978098115 |      19 | csbs      | 3011136 | president    |   4235 | 1992-10-19 |
+|     32 | Shray Badal      | H.No. 69, Chopra Marg, Morbi-794764      | 1229059741 |      11 | csbs      | 4870957 | it professor |   7083 | 2021-08-07 |
+|     38 | Saira Bajwa      | 462
+Arora Path, Hosur-114429             | 1147638554 |      21 | csbs      | 1252608 | clerk        |    661 | 1986-01-20 |
+|     43 | Sumer Bera       | H.No. 45, Raval Circle
+Ballia-443749     | 6675536480 |      20 | csbs      | 4324216 | manager      |   2830 | 2005-08-27 |
+|     63 | Shamik Mane      | 91/335
+Ray Chowk, Noida 315638           | 6203375531 |       5 | csbs      | 4150982 | clerk        |   4554 | 2030-08-01 |
+|     67 | Stuvan Chaudhary | 736, Bahl Road, Jodhpur-822953           | 4208800902 |      10 | csbs      | 9180836 | mgr          |   9790 | 2029-12-11 |
+|     76 | Shanaya Dass     | 10/22, Kaur Road, Panihati-526309        | 2013394588 |      21 | csbs      | 9769974 | analyst      |   3593 | 1980-10-11 |
+|     85 | Shray Bera       | H.No. 856
+Shere Street
+Dewas 308216      | 7523482204 |      23 | csbs      | 5004838 | analyst      |   6998 | 1994-01-25 |
+|     92 | Stuvan Ray       | H.No. 725, Shere Zila
+Yamunanagar 972842 | 6034500905 |      14 | csbs      | 7738889 | mgr          |   3766 | 1974-11-09 |
+|     94 | Shamik Saraf     | 39/91, Kibe Street, Belgaum-684445       | 4152444352 |      26 | csbs      | 2808295 | manager      |   9806 | 2015-03-03 |
+|    100 | Saira Saraf      | 134
+Goyal Road, Nizamabad-068697         | 1746737413 |      19 | csbs      | 2434484 | mgr          |   3873 | 2017-02-06 |
++--------+------------------+------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+13 rows in set (0.001 sec)
+
+--------------
+select * from employee where (e_name like "H_____%")
+--------------
+
++--------+---------------+--------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+| emp_no | e_name        | e_address                            | e_phone_no | dept_no | dept_name | job_id  | designation  | salary | hiredate   |
++--------+---------------+--------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+|     54 | Hiran Vohra   | 89/758
+Master, Karaikudi 678013      | 8787525125 |      18 | csbs      | 4375604 | it professor |   6165 | 2015-02-23 |
+|     57 | Heer Krishnan | 10/332, Garg Marg, Aurangabad 849955 | 5278142094 |      22 | csbs      | 1721538 | mgr          |   5967 | 1991-03-06 |
+|     81 | Heer Borra    | H.No. 557, Magar Zila, Arrah 967763  | 5929267306 |      14 | csbs      | 1812267 | it professor |   2845 | 1981-05-05 |
+|     88 | Hazel Gade    | 07, Gupta Chowk
+Jhansi 454973        | 7735220089 |       4 | csbs      | 3476686 | analyst      |   1115 | 2029-10-17 |
++--------+---------------+--------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+4 rows in set (0.002 sec)
+
+--------------
+select * from employee where designation!='president' or designation!='mgr' order by salary
+--------------
+
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+| emp_no | e_name              | e_address                                        | e_phone_no | dept_no | dept_name | job_id  | designation  | salary | hiredate   |
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+|     68 | Diya Bajwa          | 68
+Khare Road, Yamunanagar-301158                | 4520269444 |      19 | csbs      | 6959540 | president    |    155 | 1993-01-05 |
+|     29 | Kavya Swaminathan   | 97/58
+Cheema
+Ambarnath 046918                    | 8544572080 |      23 | csbs      | 4319399 | manager      |    244 | 2012-11-07 |
+|     80 | Kaira Sarraf        | 82/150, Kala Marg
+Bahraich 541163                | 2847523000 |      25 | csbs      | 3176297 | mgr          |    356 | 2013-06-18 |
+|     38 | Saira Bajwa         | 462
+Arora Path, Hosur-114429                     | 1147638554 |      21 | csbs      | 1252608 | clerk        |    661 | 1986-01-20 |
+|      1 | Yashvi Dhingra      | H.No. 65
+Hari Road
+Maheshtala 907219             | 9220175501 |      17 | csbs      | 7497674 | it professor |    901 | 1971-06-28 |
+|      2 | Uthkarsh Bajwa      | 301
+Chauhan Chowk, Buxar 078715                  | 2178336902 |      14 | csbs      | 2559870 | clerk        |    999 | 1991-10-31 |
+|     21 | Amira Viswanathan   | H.No. 699, Badal
+Phagwara-520144                 | 7993860047 |       9 | csbs      | 9583819 | analyst      |   1009 | 1995-07-09 |
+|     40 | Anay Sharma         | 00/957
+Yadav Circle
+Sonipat 396722               | 7881050758 |      19 | csbs      | 9099392 | manager      |   1043 | 2002-02-03 |
+|     78 | Vanya Gade          | 811, Sami Marg, Durgapur-107016                  | 1672705916 |      15 | csbs      | 6630308 | clerk        |   1093 | 2022-11-16 |
+|     88 | Hazel Gade          | 07, Gupta Chowk
+Jhansi 454973                    | 7735220089 |       4 | csbs      | 3476686 | analyst      |   1115 | 2029-10-17 |
+|     13 | Amira Dyal          | H.No. 95
+Loke Nagar, Bidar-581206                | 7330549584 |      19 | csbs      | 5629468 | it professor |   1125 | 2016-05-29 |
+|     26 | Ishita Wadhwa       | H.No. 68, Chawla Chowk
+Yamunanagar 429284        | 7530873785 |       0 | csbs      | 2717233 | clerk        |   1159 | 1971-09-24 |
+|     14 | Lakshit Khanna      | 870
+Comar Path
+Kadapa 204034                     | 2483282115 |       5 | csbs      | 8745307 | it professor |   1169 | 1991-10-25 |
+|     59 | Nakul Chaudhari     | 454, Garg Circle
+Gudivada 376764                 | 8566990354 |      23 | csbs      | 4292826 | president    |   1174 | 2020-04-09 |
+|     46 | Jivika Bhasin       | 15/426
+Gandhi Street
+Kolhapur 724252             | 9496663807 |       4 | csbs      | 3652578 | president    |   1296 | 1979-03-26 |
+|     65 | Jayan Ratti         | 31/44
+Seshadri Nagar
+Bhopal-701746               | 9861012048 |      30 | csbs      | 9635582 | analyst      |   1385 | 2026-07-01 |
+|     56 | Darshit Dash        | H.No. 42
+Ramesh Circle
+Belgaum 076436            | 7404186141 |      20 | csbs      | 1402340 | manager      |   1407 | 2004-08-31 |
+|     39 | Mishti Dave         | 30/57
+Rama Road, Eluru-064572                    | 6296438816 |       2 | csbs      | 2110571 | analyst      |   1629 | 2030-07-23 |
+|      7 | Urvi Garg           | 520, Rajagopalan Ganj
+Saharanpur 905111          | 9317251913 |      18 | csbs      | 6271176 | clerk        |   1714 | 2017-03-12 |
+|     47 | Khushi Rajagopalan  | H.No. 847
+Deol Zila, Dibrugarh-872922            | 2399190271 |       9 | csbs      | 4214844 | manager      |   1940 | 1974-09-01 |
+|     42 | Reyansh Jha         | 617, Konda Zila, Malda-862346                    | 2376783260 |      20 | csbs      | 9730999 | clerk        |   2225 | 2026-03-17 |
+|     48 | Eshani Kar          | 87/17, Raj Chowk, Visakhapatnam-404779           | 8544586123 |       7 | csbs      | 6552946 | mgr          |   2231 | 1997-06-09 |
+|      8 | Ira Balakrishnan    | H.No. 766
+Sharma Marg, Ramgarh-061306            | 7860319225 |       1 | csbs      | 1984910 | it professor |   2307 | 2031-01-23 |
+|      6 | Krish Dubey         | 823, Kalita Ganj, Ghaziabad 691660               | 8104920856 |       6 | csbs      | 3379415 | president    |   2438 | 2023-01-03 |
+|     69 | Elakshi Chakrabarti | 18/850, Brahmbhatt Ganj
+Imphal-902807            | 4163489435 |      18 | csbs      | 7212661 | manager      |   2447 | 1974-12-08 |
+|     64 | Aradhya Iyengar     | 399
+Lanka Street
+Tenali-196768                   | 3379561760 |      13 | csbs      | 4727226 | it professor |   2593 | 2000-12-23 |
+|     53 | Mehul Gala          | H.No. 473, Lad Chowk
+Tiruppur-662052             | 3293328686 |       7 | csbs      | 6365742 | analyst      |   2646 | 2023-04-06 |
+|     97 | Taimur Walla        | H.No. 677, Suresh Street, Darbhanga-853621       | 4768417086 |       9 | csbs      | 7917828 | it professor |   2704 | 1978-05-03 |
+|     72 | Aayush Swamy        | 36/896, Date Street, Vasai-Virar-650849          | 2721634761 |       8 | csbs      | 3671933 | analyst      |   2824 | 2025-09-07 |
+|     43 | Sumer Bera          | H.No. 45, Raval Circle
+Ballia-443749             | 6675536480 |      20 | csbs      | 4324216 | manager      |   2830 | 2005-08-27 |
+|     81 | Heer Borra          | H.No. 557, Magar Zila, Arrah 967763              | 5929267306 |      14 | csbs      | 1812267 | it professor |   2845 | 1981-05-05 |
+|     10 | Gatik Sant          | 27/347
+Buch Road
+Malegaon-481030                 | 6033941038 |      23 | csbs      | 6918132 | president    |   2896 | 2028-07-24 |
+|      5 | Aradhya Kunda       | 15/28, Deshpande Ganj
+Jamnagar 273132            | 2442989356 |       2 | csbs      | 3632302 | analyst      |   2937 | 2019-09-16 |
+|     62 | Devansh Kamdar      | H.No. 507, Iyer Nagar
+Rourkela-873730            | 4978310750 |      14 | csbs      | 2781355 | president    |   3010 | 2008-05-07 |
+|     22 | Veer Balakrishnan   | 20/266, Taneja Ganj, Moradabad 740651            | 9500869701 |       6 | csbs      | 3694437 | analyst      |   3012 | 2025-04-16 |
+|     74 | Gokul Bhat          | H.No. 75, Kumer Circle
+Raipur-221883             | 6015575900 |      11 | csbs      | 3615717 | president    |   3066 | 2023-07-22 |
+|     30 | Kabir Tata          | 65/99
+Dora Ganj
+Karawal Nagar-566105             | 3287225267 |       5 | csbs      | 5459520 | mgr          |   3203 | 2009-01-05 |
+|      4 | Miraan Chatterjee   | 031, Shenoy Nagar, Haldia-873862                 | 1530508794 |      26 | csbs      | 6855207 | analyst      |   3318 | 1996-06-16 |
+|     41 | Emir Raval          | 81
+Madan Road, Rampur 311805                     | 4695561831 |      18 | csbs      | 7357676 | it professor |   3328 | 1979-01-04 |
+|     76 | Shanaya Dass        | 10/22, Kaur Road, Panihati-526309                | 2013394588 |      21 | csbs      | 9769974 | analyst      |   3593 | 1980-10-11 |
+|     23 | Dhanush Goda        | H.No. 014
+Gade Street
+Anand 001347               | 3866469843 |       6 | csbs      | 4054802 | it professor |   3643 | 2031-03-21 |
+|     95 | Yuvraj  Kamdar      | 97/639
+Sankar Path, Nangloi Jat 170216           | 7093624465 |       0 | csbs      | 4841150 | mgr          |   3719 | 2009-03-29 |
+|     92 | Stuvan Ray          | H.No. 725, Shere Zila
+Yamunanagar 972842         | 6034500905 |      14 | csbs      | 7738889 | mgr          |   3766 | 1974-11-09 |
+|     58 | Aaryahi Chaudhari   | 31/773
+Kulkarni Path
+Haridwar 350253             | 5853149146 |      21 | csbs      | 7391267 | president    |   3847 | 1990-07-09 |
+|    100 | Saira Saraf         | 134
+Goyal Road, Nizamabad-068697                 | 1746737413 |      19 | csbs      | 2434484 | mgr          |   3873 | 2017-02-06 |
+|     12 | Jayan Bahl          | 26/63
+Vaidya Road
+Jodhpur-597207                 | 9122338631 |      17 | csbs      | 6614679 | analyst      |   4101 | 1998-01-24 |
+|     18 | Shayak Mahal        | 90, Gaba
+Eluru-483402                            | 4978098115 |      19 | csbs      | 3011136 | president    |   4235 | 1992-10-19 |
+|     34 | Pihu Sule           | 387, Chandra
+Karaikudi 639219                    | 6989278861 |      10 | csbs      | 6475035 | manager      |   4275 | 2027-08-01 |
+|     71 | Reyansh Dada        | H.No. 558
+Majumdar
+Shahjahanpur-374295           | 4510034191 |       9 | csbs      | 6290693 | president    |   4457 | 2007-05-05 |
+|     60 | Aaina Bose          | H.No. 144, Gola, Chinsurah 774757                | 1742890922 |       0 | csbs      | 4445898 | clerk        |   4525 | 2016-10-25 |
+|     63 | Shamik Mane         | 91/335
+Ray Chowk, Noida 315638                   | 6203375531 |       5 | csbs      | 4150982 | clerk        |   4554 | 2030-08-01 |
+|     70 | Purab Venkatesh     | H.No. 60, Khurana, Unnao 836823                  | 7256403957 |      10 | csbs      | 8237480 | mgr          |   4617 | 2018-02-11 |
+|     17 | Abram Ravi          | 68/857, Gola Marg, Mangalore-437483              | 8776917926 |      29 | csbs      | 4822499 | mgr          |   4649 | 1970-09-04 |
+|     33 | Ranbir Dalal        | 30/064, Krishna Street, Mirzapur-353912          | 6818724194 |       1 | csbs      | 3328789 | clerk        |   4665 | 1980-09-29 |
+|     11 | Nakul Johal         | 33
+Saraf Street, Baranagar-691562                | 5924544280 |      18 | csbs      | 8364043 | mgr          |   4668 | 1994-06-19 |
+|     66 | Fateh Thakkar       | 71, Varkey Circle
+Aligarh 707050                 | 2581464737 |      20 | csbs      | 3615125 | mgr          |   4708 | 1987-08-05 |
+|     16 | Sana Bobal          | 96/276
+Dora Zila, Gangtok 261606                 | 3911844914 |       3 | csbs      | 5663903 | clerk        |   4759 | 1972-08-03 |
+|     98 | Miraya Handa        | 11/383, Bava Road
+Erode-499430                   | 6796353867 |      30 | csbs      | 4163880 | manager      |   4901 | 2003-11-26 |
+|     84 | Advika Chopra       | H.No. 061
+Garg, Udupi 005644                     | 1637473345 |      20 | csbs      | 6644682 | president    |   4912 | 1979-01-22 |
+|     91 | Kismat Warrior      | 18/230, Kapoor Road, Visakhapatnam-639083        | 2997089052 |      19 | csbs      | 7579467 | president    |   4917 | 2018-11-15 |
+|     75 | Anahita Suri        | H.No. 24
+Chad Street
+Mahbubnagar-663383          | 9987951629 |       3 | csbs      | 6601868 | clerk        |   5277 | 1992-07-17 |
+|     15 | Anay Korpal         | H.No. 53
+Kota Zila
+Aurangabad-000764             | 9907156401 |       3 | csbs      | 1308736 | mgr          |   5291 | 1995-08-16 |
+|      3 | Ranbir Walia        | H.No. 46
+Goswami Ganj
+Tumkur-674366              | 8043286987 |       8 | csbs      | 7555122 | analyst      |   5526 | 2024-11-19 |
+|     50 | Advik Kalla         | H.No. 462
+Kale Marg
+Bhopal-654347                | 8452801783 |      14 | csbs      | 2803997 | manager      |   5650 | 1996-04-29 |
+|     89 | Myra Sankaran       | 88/376
+Barad Street
+Ajmer-023474                 | 3290848861 |      12 | csbs      | 5454645 | clerk        |   5696 | 1990-02-28 |
+|     45 | Arhaan Ratti        | 459, Tara Road, Allahabad 646630                 | 3003224583 |      11 | csbs      | 2300841 | manager      |   5753 | 1999-04-13 |
+|     99 | Ahana  Bawa         | H.No. 23, Gole Ganj, Hyderabad 022843            | 8007677764 |      20 | csbs      | 2193235 | analyst      |   5959 | 2018-06-15 |
+|     57 | Heer Krishnan       | 10/332, Garg Marg, Aurangabad 849955             | 5278142094 |      22 | csbs      | 1721538 | mgr          |   5967 | 1991-03-06 |
+|     54 | Hiran Vohra         | 89/758
+Master, Karaikudi 678013                  | 8787525125 |      18 | csbs      | 4375604 | it professor |   6165 | 2015-02-23 |
+|     27 | Vihaan Gour         | 81
+Desai Nagar
+Nandyal 014155                    | 7605526092 |      16 | csbs      | 5627962 | president    |   6518 | 2030-06-11 |
+|     20 | Yasmin Kothari      | 55/11, Rajagopalan
+Rajahmundry-415643            | 7812180617 |      24 | csbs      | 6632373 | analyst      |   6630 | 1971-01-15 |
+|     51 | Yasmin Mahal        | H.No. 469, Wable Street
+Sultan Pur Majra 562401  | 9409021920 |      29 | csbs      | 1760584 | mgr          |   6709 | 1974-03-05 |
+|     93 | Nayantara Deshpande | 62/189, Gupta Zila
+Jamnagar-884728               | 1242810178 |       7 | csbs      | 2256081 | president    |   6750 | 2022-12-03 |
+|     49 | Lavanya Ganesan     | 06/83
+Ghose Zila, Berhampur 884595               | 1963715667 |      11 | csbs      | 2834082 | analyst      |   6873 | 1993-10-15 |
+|     85 | Shray Bera          | H.No. 856
+Shere Street
+Dewas 308216              | 7523482204 |      23 | csbs      | 5004838 | analyst      |   6998 | 1994-01-25 |
+|     32 | Shray Badal         | H.No. 69, Chopra Marg, Morbi-794764              | 1229059741 |      11 | csbs      | 4870957 | it professor |   7083 | 2021-08-07 |
+|     36 | Yakshit Rastogi     | 88, Sethi, Sri Ganganagar 323340                 | 3691091324 |      25 | csbs      | 7035871 | clerk        |   7265 | 2014-12-02 |
+|     73 | Rati Bir            | 92
+Chandra Zila
+Malda-428295                     | 7779026763 |      18 | csbs      | 1441822 | it professor |   7519 | 2004-11-20 |
+|     79 | Aaina Bassi         | 058
+Dugal Zila, Proddatur-638950                 | 6604178230 |       2 | csbs      | 1501507 | it professor |   7660 | 1976-01-15 |
+|     28 | Neelofar Iyer       | H.No. 232
+Thaker Nagar
+Bidhannagar-050087        | 6327063125 |      15 | csbs      | 9573588 | it professor |   7720 | 2011-01-14 |
+|     25 | Tiya Gour           | 192, Chhabra Path, Gaya 305638                   | 7224478579 |       0 | csbs      | 5683970 | clerk        |   7764 | 1973-12-20 |
+|     61 | Mohanlal Chhabra    | 221
+Babu Zila, Gorakhpur-288653                  | 1691487460 |      16 | csbs      | 2279199 | manager      |   7775 | 2032-08-19 |
+|     19 | Zoya Sekhon         | 32/839, Som Zila, Kochi 936652                   | 7322883191 |      15 | csbs      | 3240998 | mgr          |   7888 | 2015-04-23 |
+|     35 | Biju Vasa           | 04/19
+Apte Circle, Aurangabad-504786             | 7000798044 |       4 | csbs      | 8766721 | manager      |   7967 | 2025-10-05 |
+|     37 | Anahita Rau         | 23/198, Bhakta Street
+Kalyan-Dombivli 421981     | 2925591645 |      30 | csbs      | 7509930 | president    |   8014 | 1995-06-23 |
+|     55 | Mahika Bose         | 412, Sandal Chowk
+Kota-747762                    | 3628939059 |       5 | csbs      | 5838881 | manager      |   8018 | 1975-03-06 |
+|     82 | Azad Chopra         | H.No. 28, Sharma
+Jabalpur-846397                 | 9435261046 |       4 | csbs      | 8394079 | analyst      |   8159 | 2027-07-05 |
+|     87 | Ira Mandal          | H.No. 03, Rajagopalan Circle, Gandhinagar 954072 | 5615382593 |      14 | csbs      | 8236790 | analyst      |   8360 | 1997-07-14 |
+|      9 | Suhana Varkey       | 54/434, Sur Zila
+Eluru 998917                    | 4042645117 |      18 | csbs      | 6926617 | mgr          |   8375 | 1973-10-02 |
+|     24 | Aarush Bhargava     | H.No. 90
+Garg, Munger 488150                     | 7886271353 |       9 | csbs      | 6018261 | manager      |   8539 | 1992-12-12 |
+|     83 | Fateh Shroff        | 556
+Shroff Circle
+Ujjain 724521                  | 7910538298 |       5 | csbs      | 6953251 | analyst      |   8780 | 2003-11-26 |
+|     90 | Indrans Gill        | H.No. 19
+Agate Zila, Sri Ganganagar 467465       | 1616774578 |      19 | csbs      | 6234961 | clerk        |   9332 | 1980-08-01 |
+|     86 | Damini Dubey        | H.No. 11, Kashyap Ganj, Sambhal-617079           | 8400250595 |      30 | csbs      | 4204452 | clerk        |   9376 | 2024-11-29 |
+|     31 | Jivin Bakshi        | H.No. 531
+Bajaj, Meerut-603829                   | 1095266715 |      11 | csbs      | 4515965 | president    |   9492 | 1980-10-02 |
+|     52 | Jhanvi Golla        | H.No. 056
+Chakrabarti Street, Tirunelveli 107607 | 1613738399 |      10 | csbs      | 3480031 | mgr          |   9507 | 2007-11-04 |
+|     44 | Kashvi Kapoor       | H.No. 25, Kapur Path, Guna 756000                | 4622767577 |       5 | csbs      | 8518419 | clerk        |   9535 | 1983-08-18 |
+|     96 | Tushar Raval        | H.No. 932
+Kapadia Chowk, Dibrugarh 966089        | 7608375120 |      29 | csbs      | 4046532 | it professor |   9684 | 2026-08-18 |
+|     67 | Stuvan Chaudhary    | 736, Bahl Road, Jodhpur-822953                   | 4208800902 |      10 | csbs      | 9180836 | mgr          |   9790 | 2029-12-11 |
+|     94 | Shamik Saraf        | 39/91, Kibe Street, Belgaum-684445               | 4152444352 |      26 | csbs      | 2808295 | manager      |   9806 | 2015-03-03 |
+|     77 | Zain Srinivasan     | 46/661, Dada Path
+Thanjavur-690072               | 8049691823 |       4 | csbs      | 1418918 | manager      |   9920 | 1989-07-24 |
++--------+---------------------+--------------------------------------------------+------------+---------+-----------+---------+--------------+--------+------------+
+100 rows in set (0.003 sec)
+
+MariaDB [iem]> exit;

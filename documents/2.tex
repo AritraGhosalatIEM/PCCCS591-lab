@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{tcolorbox}
+\usepackage{underscore}
+\usepackage{verbatim}
+\usepackage{minted}
+\usemintedstyle{rainbow_dash}
+\pagestyle{empty}
+\begin{document}
+\section*{Experiment 2}
+\subsection*{\textbf{Title:}} Implementation of DML commands of SQL with suitable examples
+\begin{itemize}
+	\item Insert table
+	\item Update table
+	\item Delete Table
+\end{itemize}
+\subsection*{\textbf{Objective:}} To understand the different issues involved in the design and implementation of a database system.
+To understand and use data manipulation language to query, update, and manage a
+database.
+\subsection*{Lab Assignment}
+Create a table EMPLOYEE with following schema: (Emp_no, E_name, E_address, E_ph_no, Dept_no, Dept_name,Job_id , Salary)\\
+Write SQL queries for following question:
+\begin{enumerate}
+	\item Insert aleast 5 rows in the table.
+	\item Display all the information of EMP table.
+	\item Display the record of each employee who works in department D10.
+	\item Update the city of Emp_no-12 with current city as Nagpur.
+	\item Display the details of Employee who works in department MECH.
+	\item Delete the email_id of employee James.
+	\item Display the complete record of employees working in SALES Department.
+\end{enumerate}
+\subsection*{Code}
+\inputminted{sql}{code/2.sql}
+\subsection*{Output}
+\verbatiminput{output/2.txt}
+\end{document}

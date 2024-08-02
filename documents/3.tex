@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{tcolorbox}
+\usepackage{underscore}
+\usepackage{verbatim}
+\usepackage{minted}
+\usemintedstyle{rainbow_dash}
+\pagestyle{empty}
+\begin{document}
+\section*{Experiment 3}
+\subsection*{\textbf{Title:} Implementation of different types of functions with suitable examples.
+\begin{itemize}
+	\item Create Table
+	\item Alter Table
+	\item Drop Table
+	\item Number Function
+	\item Aggregate Function
+	\item Character Function
+	\item Conversion Function
+	\item Date Function
+\end{itemize}
+\subsection*{\textbf{Objective:}}
+\begin{itemize}
+	\item Develop aggregate plan strategies to assist with summarization of several data entries.
+\end{itemize}
+\subsection*{Lab Assignment}
+\begin{itemize}
+	\item Create a table EMPLOYEE with following schema: (Emp_no, E_name, E_address, E_ph_no, Dept_no, Dept_name,Job_id, Designation, Salary)
+	\item List the E_no, E_name, Salary of all employees working for MANAGER.
+	\item Display all the details of the employee whose salary is more than the Sal of any IT PROFF..
+	\item List the employees in the ascending order of Designations of those joined after 1981.
+	\item List the employees along with their Experience and Daily Salary.
+	\item List the employees who are either ‘CLERK’ or ‘ANALYST’ .
+	\item List the employees who joined on 1-MAY-81, 3-DEC-81, 17-DEC-81,19-JAN-80 .
+	\item List the employees who are working for the Deptno 10 or20.
+	\item List the Enames those are starting with ‘S’ .
+	\item Dislay the name as well as the first five characters of name(s) starting with ‘H’
+	\item  List all the emps except ‘PRESIDENT’ & ‘MGR” in asc order of Salaries.
+\end{itemize}
+\subsection*{Code}
+\inputminted{sql}{code/3.sql}
+\subsection*{Output}
+\verbatiminput{output/3.txt}
+\end{document}
