@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{tcolorbox}
+\usepackage{underscore}
+\usepackage{verbatim}
+\usepackage{minted}
+\usemintedstyle{rainbow_dash}
+\setminted{breaklines}
+\pagestyle{empty}
+\begin{document}
+\section*{Experiment 3}
+\subsection*{\textbf{Title:} Implementation of different types of operators in SQL.}
+\begin{itemize}
+	\item Arithmetic Operator
+	\item Logical Operator
+	\item Comparison Operator
+	\item Special Operator
+	\item Set Operator
+\end{itemize}
+\subsection*{\textbf{Objective:}}
+\begin{itemize}
+	\item To learn different typeof operators.
+\end{itemize}
+\subsection*{Lab Assignment}
+\begin{itemize}
+	\item Display all the dept numbers available with the dept and emp tables avoiding duplicates.
+	\item Display all the dept numbers available with the dept and emp tables.
+	\item Display all the dept numbers available in emp and not in dept tables and vice versa.
+\end{itemize}
+\subsection*{Code}
+\inputminted{sql}{code/4.sql}
+\subsection*{Output}
+\verbatiminput{output/4.txt}
+\end{document}
