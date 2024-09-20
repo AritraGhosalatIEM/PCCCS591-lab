@@ -1,0 +1,151 @@
+MariaDB [iem]> source code/6.sql;
+Query OK, 0 rows affected, 1 warning (0.000 sec)
+
++--------------+-------------+
+| job_category | sum(salary) |
++--------------+-------------+
+| Analyst      |   389000.00 |
+| Clerk        |   287500.00 |
+| Developer    |   310000.00 |
+| Manager      |   377000.00 |
+| Recruiter    |    70000.00 |
++--------------+-------------+
+5 rows in set (0.000 sec)
+
++-------------+------------+-----------+----------+--------------+------------+-----------------+
+| employee_id | first_name | last_name | salary   | job_category | manager_id | department_name |
++-------------+------------+-----------+----------+--------------+------------+-----------------+
+|           7 | Tom        | White     |  8000.00 | Clerk        |          1 | Sales           |
+|          10 | Laura      | Clark     | 13000.00 | Analyst      |          2 | Marketing       |
+|          14 | Karen      | Rodriguez | 11000.00 | Analyst      |         11 | IT              |
+|          20 | Jessica    | Jackson   |  9000.00 | Clerk        |         16 | HR              |
+|          26 | Charles    | Martinez  | 14000.00 | Clerk        |         21 | Finance         |
+|          31 | Megan      | Brown     | 13000.00 | Clerk        |         27 | Marketing       |
+|          36 | Daniel     | Wilson    | 12000.00 | Clerk        |         32 | IT              |
+|          40 | Sarah      | Williams  | 15000.00 | Clerk        |         37 | Sales           |
+|          46 | Laura      | Hernandez | 14000.00 | Analyst      |         42 | Operations      |
+|          51 | Jessica    | Wilson    | 12000.00 | Clerk        |         47 | Support         |
+|          56 | Nancy      | Allen     | 15000.00 | Clerk        |         52 | HR              |
+|          61 | Brian      | Baker     | 17000.00 | Developer    |         57 | Finance         |
+|          66 | Linda      | Roberts   | 14000.00 | Clerk        |         62 | Marketing       |
+|          71 | Jessica    | Martinez  | 12000.00 | Clerk        |         67 | IT              |
+|          76 | David      | Clark     | 15000.00 | Developer    |         72 | Sales           |
+|          81 | Sarah      | Rodriguez | 12000.00 | Analyst      |         77 | Operations      |
++-------------+------------+-----------+----------+--------------+------------+-----------------+
+16 rows in set (0.001 sec)
+
++-----------------+--------------------+
+| department_name | count(employee_id) |
++-----------------+--------------------+
+| Finance         |                 11 |
+| HR              |                 10 |
+| IT              |                 19 |
+| Marketing       |                 13 |
+| Operations      |                 10 |
+| Sales           |                 13 |
+| Support         |                  6 |
++-----------------+--------------------+
+7 rows in set (0.000 sec)
+
++-------------+-------------+-----------+----------+--------------+------------+-----------------+
+| employee_id | first_name  | last_name | salary   | job_category | manager_id | department_name |
++-------------+-------------+-----------+----------+--------------+------------+-----------------+
+|           7 | Tom         | White     |  8000.00 | Clerk        |          1 | Sales           |
+|           4 | Emily       | Davis     |  9000.00 | Analyst      |          1 | Marketing       |
+|          20 | Jessica     | Jackson   |  9000.00 | Clerk        |         16 | HR              |
+|           8 | Jessica     | Taylor    |  9500.00 | Clerk        |          1 | Sales           |
+|          14 | Karen       | Rodriguez | 11000.00 | Analyst      |         11 | IT              |
+|          51 | Jessica     | Wilson    | 12000.00 | Clerk        |         47 | Support         |
+|          36 | Daniel      | Wilson    | 12000.00 | Clerk        |         32 | IT              |
+|          71 | Jessica     | Martinez  | 12000.00 | Clerk        |         67 | IT              |
+|          81 | Sarah       | Rodriguez | 12000.00 | Analyst      |         77 | Operations      |
+|           3 | Mike        | Johnson   | 12000.00 | Developer    |          1 | IT              |
+|          10 | Laura       | Clark     | 13000.00 | Analyst      |          2 | Marketing       |
+|          31 | Megan       | Brown     | 13000.00 | Clerk        |         27 | Marketing       |
+|          18 | Patricia    | Thomas    | 13000.00 | Recruiter    |         16 | HR              |
+|          80 | Daniel      | Martinez  | 14000.00 | Developer    |         77 | Operations      |
+|          70 | Chris       | Miller    | 14000.00 | Analyst      |         67 | IT              |
+|          35 | Jessica     | Martinez  | 14000.00 | Analyst      |         32 | IT              |
+|          15 | Michael     | Martinez  | 14000.00 | Clerk        |         11 | IT              |
+|          66 | Linda       | Roberts   | 14000.00 | Clerk        |         62 | Marketing       |
+|          50 | David       | Lopez     | 14000.00 | Developer    |         47 | Support         |
+|          46 | Laura       | Hernandez | 14000.00 | Analyst      |         42 | Operations      |
+|          26 | Charles     | Martinez  | 14000.00 | Clerk        |         21 | Finance         |
+|          76 | David       | Clark     | 15000.00 | Developer    |         72 | Sales           |
+|          29 | Ashley      | Wilson    | 15000.00 | Analyst      |         27 | Marketing       |
+|          56 | Nancy       | Allen     | 15000.00 | Clerk        |         52 | HR              |
+|          65 | Christopher | Perez     | 15000.00 | Developer    |         62 | Marketing       |
+|          13 | Robert      | Garcia    | 15000.00 | Developer    |         11 | IT              |
+|           5 | Chris       | Brown     | 15000.00 | Analyst      |          2 | Marketing       |
+|          40 | Sarah       | Williams  | 15000.00 | Clerk        |         37 | Sales           |
+|          64 | Sarah       | Mitchell  | 16000.00 | Analyst      |         62 | Marketing       |
+|           6 | Sarah       | Wilson    | 16000.00 | Developer    |          2 | IT              |
+|          34 | David       | Johnson   | 16000.00 | Developer    |         32 | IT              |
+|          41 | Kevin       | Jones     | 16000.00 | Developer    |         37 | Sales           |
+|          55 | James       | Walker    | 16000.00 | Analyst      |         52 | HR              |
+|          75 | Matthew     | Lopez     | 16000.00 | Clerk        |         72 | Sales           |
+|          49 | Kimberly    | Rodriguez | 16000.00 | Clerk        |         47 | Support         |
+|          79 | Kimberly    | Garcia    | 16000.00 | Clerk        |         77 | Operations      |
+|          39 | Chris       | Johnson   | 17000.00 | Clerk        |         37 | Sales           |
+|          69 | Emily       | Wilson    | 17000.00 | Developer    |         67 | IT              |
+|           9 | David       | Lee       | 17000.00 | Developer    |          2 | IT              |
+|          25 | Andrew      | Garcia    | 17000.00 | Developer    |         21 | Finance         |
+|          19 | Daniel      | Taylor    | 17000.00 | Analyst      |         16 | HR              |
+|          30 | Brian       | Rodriguez | 17000.00 | Developer    |         27 | Marketing       |
+|          61 | Brian       | Baker     | 17000.00 | Developer    |         57 | Finance         |
+|          45 | Brian       | Martinez  | 17000.00 | Developer    |         42 | Operations      |
+|          74 | Nancy       | Hernandez | 18000.00 | Clerk        |         72 | Sales           |
+|           2 | Jane        | Smith     | 18000.00 | Developer    |          1 | IT              |
+|          44 | Jessica     | Garcia    | 18000.00 | Clerk        |         42 | Operations      |
+|          33 | Emily       | Davis     | 18000.00 | Developer    |         32 | IT              |
+|          54 | Laura       | Lewis     | 18000.00 | Recruiter    |         52 | HR              |
+|          28 | Laura       | Gonzalez  | 19000.00 | Analyst      |         27 | Marketing       |
+|          63 | Paul        | Carter    | 19000.00 | Analyst      |         62 | Marketing       |
+|          17 | William     | Anderson  | 19000.00 | Recruiter    |         16 | HR              |
+|          60 | Jessica     | Adams     | 19000.00 | Clerk        |         57 | Finance         |
+|          78 | Emily       | Miller    | 19000.00 | Analyst      |         77 | Operations      |
+|          68 | David       | Garcia    | 19000.00 | Developer    |         67 | IT              |
+|          48 | Matthew     | Lee       | 19000.00 | Analyst      |         47 | Support         |
+|          38 | James       | Smith     | 19000.00 | Analyst      |         37 | Sales           |
+|          53 | Michael     | Clark     | 20000.00 | Recruiter    |         52 | HR              |
+|          59 | Daniel      | Scott     | 20000.00 | Analyst      |         57 | Finance         |
+|          73 | Laura       | Roberts   | 20000.00 | Analyst      |         72 | Sales           |
+|          12 | Linda       | Harris    | 20000.00 | Developer    |         11 | IT              |
+|          43 | Joshua      | Miller    | 20000.00 | Analyst      |         42 | Operations      |
+|          24 | Elizabeth   | Thompson  | 20000.00 | Clerk        |         21 | Finance         |
+|          16 | Mary        | Wilson    | 21000.00 | Manager      |       NULL | HR              |
+|          82 | Robert      | Martinez  | 21000.00 | Manager      |       NULL | Support         |
+|          47 | Sarah       | Jackson   | 21000.00 | Manager      |       NULL | Support         |
+|          11 | James       | Martin    | 22000.00 | Manager      |       NULL | IT              |
+|          23 | Kevin       | Martin    | 22000.00 | Analyst      |         21 | Finance         |
+|          42 | Nicholas    | Davis     | 22000.00 | Manager      |       NULL | Operations      |
+|          58 | Joshua      | Hall      | 22000.00 | Analyst      |         57 | Finance         |
+|          52 | Emily       | Harris    | 23000.00 | Manager      |       NULL | HR              |
+|          37 | Samantha    | Brown     | 23000.00 | Manager      |       NULL | Sales           |
+|          72 | Michael     | Anderson  | 23000.00 | Manager      |       NULL | Sales           |
+|          57 | Robert      | Young     | 24000.00 | Manager      |       NULL | Finance         |
+|          32 | Matthew     | Smith     | 24000.00 | Manager      |       NULL | IT              |
+|          22 | Nancy       | Harris    | 24000.00 | Analyst      |         21 | Finance         |
+|          67 | Matthew     | Thompson  | 25000.00 | Manager      |       NULL | IT              |
+|           1 | John        | Doe       | 25000.00 | Manager      |       NULL | Sales           |
+|          27 | Steven      | Lopez     | 25000.00 | Manager      |       NULL | Marketing       |
+|          21 | Paul        | White     | 26000.00 | Manager      |       NULL | Finance         |
+|          77 | James       | Jackson   | 26000.00 | Manager      |       NULL | Operations      |
+|          62 | Emily       | Nelson    | 26000.00 | Manager      |       NULL | Marketing       |
++-------------+-------------+-----------+----------+--------------+------------+-----------------+
+82 rows in set (0.000 sec)
+
++-----------------+-------------------------------------------------------------------------------------------+
+| department_name | group_concat(salary)                                                                      |
++-----------------+-------------------------------------------------------------------------------------------+
+| Finance         | 22000.00,24000.00,20000.00,19000.00,17000.00,22000.00,17000.00,20000.00,24000.00,26000.00 |
+| HR              | 20000.00,21000.00,23000.00,18000.00,19000.00,17000.00                                     |
+| IT              | 17000.00,22000.00,18000.00,20000.00,25000.00,19000.00,17000.00,24000.00,18000.00          |
+| Marketing       | 26000.00,19000.00,19000.00,25000.00,17000.00                                              |
+| Operations      | 26000.00,19000.00,17000.00,18000.00,20000.00,22000.00                                     |
+| Sales           | 23000.00,25000.00,19000.00,18000.00,20000.00,23000.00,17000.00                            |
+| Support         | 21000.00,19000.00,21000.00                                                                |
++-----------------+-------------------------------------------------------------------------------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [iem]> exit;

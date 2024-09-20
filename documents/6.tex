@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{tcolorbox}
+\usepackage{underscore}
+\usepackage{verbatim}
+\usepackage{minted}
+\usemintedstyle{rainbow_dash}
+\setminted{breaklines}
+\pagestyle{empty}
+\begin{document}
+\section*{Experiment \jobname}
+\subsection*{\textbf{Title:} Study and Implementation of :}
+\begin{itemize}
+	\item Group by and Having Clause
+	\item Order by Clause
+	\item Indexing
+\end{itemize}
+\subsection*{\textbf{Objective:}}
+\begin{itemize}
+	\item To learn concept of group functions.
+\end{itemize}
+\subsection*{Lab Assignment}
+\begin{itemize}
+	\item Display total salary spent for each job category.
+	\item Display lowest paid employee details under each manager.
+	\item Display number of employees working in each department and their department name.
+	\item Display the details of employees sorting the salary in increasing order.
+	\item Show the record of employee earning salary greater than 16000 in each department.
+	\item Write queries to implement and practice the above clause
+\end{itemize}
+\subsection*{Code}
+\inputminted{sql}{code/\jobname.sql}
+\subsection*{Output}
+\verbatiminput{output/\jobname.txt}
+\end{document}
