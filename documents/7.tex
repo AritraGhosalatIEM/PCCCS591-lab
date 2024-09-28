@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{tcolorbox}
+\usepackage{underscore}
+\usepackage{verbatim}
+\usepackage{minted}
+\usemintedstyle{rainbow_dash}
+\setminted{breaklines}
+\pagestyle{empty}
+\begin{document}
+\section*{Experiment \jobname}
+\subsection*{\textbf{Title:} Study and Implementation of:}
+\begin{itemize}
+	\item Sub queries
+	\item Views
+\end{itemize}
+\subsection*{\textbf{Objective:}}
+\begin{itemize}
+	\item To perform nested queries and joining queries using DML commands
+	\item To understand the implementation of views
+\end{itemize}
+\subsection*{Lab Assignment}
+\begin{itemize}
+	\item Find all information of sailors who have reserved boat number 101.
+	\item Find the name of boat reserved by Bob.
+	\item Find the names of sailors who have reserved a red boat, and list in the order of age.
+	\item Find the names of sailors who have reserved at least one boat.
+	\item Find the ids and names of sailors who have reserved two different boats on the same day.
+	\item Find the ids of sailors who have reserved a red boat or a green boat.
+	\item Find the name and the age of the youngest sailor.
+	\item Count the number of different sailor names.
+	\item Find the average age of sailors for each rating level.
+	\item Find the average age of sailors for each rating level that has at least two sailors.
+\end{itemize}
+\subsection*{Code}
+\inputminted{sql}{code/\jobname.sql}
+\subsection*{Output}
+\verbatiminput{output/\jobname.txt}
+\end{document}
